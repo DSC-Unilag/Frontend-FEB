@@ -1,0 +1,86 @@
+	body{
+		background-color: #ff5a00;
+	}
+
+		#header{
+		text-align: center;
+		margin: 2px;
+		width: 100%;
+		background-color: #66616180;
+		color: #fffc;
+		padding-top: 7px;
+		padding-bottom: 7px;
+		font-family: sans-serif;
+	}
+		.nav{
+		background-color: #1a1919;
+		margin-right: 1px;
+		margin-top: 0px;
+		width: 30%;
+		box-shadow: 3px 3px 5px black;
+		padding: 5px 1px;
+		display: block;
+	}
+
+		.nav li{
+		padding-top:35px;
+		padding-bottom: 10px;
+		border-width: 2px;
+		border: solid 1px #e4e4e4cc;
+		border-top: none;
+		border-left: none;
+		border-right: none;
+		color: #e4e4e4cc;
+		display: block;
+		list-style-type: none;
+		text-align: center;
+	}
+
+
+		#add-btn{
+			width: 5%;
+			height: 40px;
+			margin-left: 85%;
+			display: ruby-base-container;
+			border-radius: 5px;
+			border: 2px solid #e4e4e4cc;
+		}
+		#add-btn img{
+			padding-top: 4px;
+		}
+		.add-todo{
+			position: absolute;
+			top: 30%;
+			left: 50%;
+			font-size: 20px;
+		}
+
+		.add-todo input{
+		border-top: none;
+		border-right: none;
+		border-left: none;
+		border-color: black;
+		border-width: 2px;
+		padding-left: 2px;
+		background-color: #fefefe00;
+		font-size: 17px;
+
+	}
+
+		#empty-todo{
+			position: absolute;
+			top: 50%;
+			left: 50%;
+			font-size: 20px;
+
+		}
+
+		#footer{
+		text-align: center;
+		margin-top: 5px;
+		margin-bottom: 0px;
+		padding: 3px;
+		width: 100%;
+		background-color: #66616180;
+		color: #fffc;
+	}
