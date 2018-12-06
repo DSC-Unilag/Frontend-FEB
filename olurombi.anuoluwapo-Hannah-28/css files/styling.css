@@ -1,0 +1,308 @@
+body{
+    margin:0;
+    padding:0;
+}
+.bg img{
+    width:100%;   
+}
+.name{
+    margin-top:-67%;
+    margin-left:5%;
+}
+.name h2{
+    color:white;
+    font-family: sans-serif;
+    font-size:150%
+}
+.name span{
+    background-color:#FF0044;
+}
+.name p{
+    color:white;
+    margin-top:-1%;
+    font-family:'Helvetica Neue'
+}
+.navlist{
+    margin-top:6%;
+    display: inline-block;
+    float: right;
+    list-style-type:none;  
+}
+.navlist li{
+    display:inline-block;
+    padding:15px 15px 15px 15px;
+    color:white;
+    font-family:'Tahoma';
+    font-size:150%
+}
+.navbar{
+    margin-top:-9%;
+    position: relative;
+    top: 0;
+    width: 100%;
+}
+.navlist li::after {
+    content: "";
+    display: inline-block;
+    margin-bottom: 1px;
+    height: 3px;
+    background-color:#FF0044;
+    width: 100%;
+    transition-duration: 0.5s
+}
+.navlist li:hover{
+    color:rgba(209, 192, 192, 0.383);
+    transition-delay:150ms;
+    transition-duration:1000ms;
+    transition-property: all;
+    cursor:pointer;
+    transition-timing-function:ease-in;
+}
+.story{
+    color:white;
+    text-align: center;
+    margin-top:30%;
+    font-family:'Arial';
+    font-size:200%
+}
+.btn{
+    text-align: center
+}
+.know{
+    text-align:center;
+    margin-top:7%;
+}
+.know a{
+    background:rgba(209, 192, 192, 0.383);
+    text-decoration: none;
+    color:white;
+    padding: 10px 30px 10px 30px;
+    margin-right: 180px
+}
+.help{
+    text-align: center;
+    margin-top:-1.2%
+}
+.help a{
+    background: #FF0044;
+    text-decoration:none;
+    color:white;
+    padding:10px 10px 10px 10px;
+    margin-left: 180px
+}
+main{
+    margin-top: 40%;
+    background: #EEEEEE;
+    text-align: center;
+    border-radius: 3%
+}
+.description h1{
+    font-family: cursive;
+    font-size: 500%;
+}
+.description p{
+    font-family: Times;
+    font-size:300%
+}
+.me{
+    margin: 10%;
+    background-color: white;
+    border-radius: 20px;
+    border-bottom: 4px solid #CCCCCC
+}
+.me:hover{
+    border-bottom:4px solid #FF0044
+}
+.me h1{
+    font-family: cursive;
+    font-size: 400%;
+}
+.me p{
+    font-family: Times;
+    font-size: 300%
+}
+.pic img{
+    width:70%
+}
+.background{
+    margin:10%;
+    background-color: white;
+    border-radius: 20px;
+    border-bottom: 4px solid #CCCCCC
+}
+.background:hover{
+    border-top: 4px solid #FF0044
+}
+.background h1{
+    font-family: cursive;
+    font-size: 400%
+}
+.background p{
+    font-family: Times;
+    font-size: 300%
+}
+.goal{
+    margin:10%;
+    background-color: white;
+    border-radius: 20px;
+    border-bottom: 4px solid #CCCCCC
+}
+.goal:hover{
+    border-bottom: 4px solid #FF0044
+}
+.goal h1{
+    font-family: cursive;
+    font-size: 400%
+}
+.goal p{
+    font-family: Times;
+    font-size: 300%
+}
+.skill{
+    text-align: center;
+    list-style-type:none;
+    font-family: sans-serif;
+    color:white;
+}
+.skill li:nth-child(1){
+    background: #0399FF;
+    padding: 7px 5px 7px 5px;
+    width:12%;
+    border-radius: 6px;
+    margin-left:15%
+}
+.skill li:nth-child(2){
+    background: #FF9904;
+    padding: 7px 5px 7px 5px;
+    width: 12%;
+    border-radius: 6px;
+    margin-left: 30%;
+    margin-top: -2.5%
+}
+.skill li:nth-child(3){
+    background: #0399FF;
+    padding: 7px 5px 7px 5px;
+    width:12%;
+    border-radius: 6px;
+    margin-left:45%;
+    margin-top: -2.5%
+}
+.skill li:nth-child(4){
+    background: #FF9904;
+    padding: 7px 5px 7px 5px;
+    width: 12%;
+    border-radius: 6px;
+    margin-left: 60%;
+    margin-top: -2.5%
+}
+.skill li:nth-child(5){
+    background: #0399FF;
+    padding: 7px 5px 7px 5px;
+    width:12%;
+    border-radius: 6px;
+    margin-left:75%;
+    margin-top: -2.5%
+}
+.status{
+    margin:10%;
+    background-color: #EEEEEE;
+    border-radius: 20px;
+    border-bottom: 4px solid #CCCCCC;
+    text-align: center
+}
+.status:hover{
+    border-top: 4px solid #FF0044
+}
+.status h1{
+    font-family: cursive;
+    font-size: 300%;
+    padding-top:30px
+}
+.status h2{
+    font-family: cursive;
+    font-size: 400%;
+    color:#0399FF;
+    margin-top:-30px
+}
+.status p{
+    font-family:Times;
+    font-size: 300%
+}
+.date{
+    font-family:'Trebuchet MS'
+}
+.mail{
+    color:#0399FF
+}
+#contact h1{
+    font-size: 100%;
+    font-family:cursive;
+    color:white;
+    background: #FF0044;
+    text-align: center;
+    padding-top: 4px;
+    height: 30px;
+    width:10%;
+    border-radius: 5px;
+    margin-left: 10%
+}
+#contact p{
+    text-align:center;
+    font-family: Times;
+    font-size:300%;
+    color: #444444;
+}
+.form{
+    margin-left: 20%;
+    margin-top:5%
+}
+.form input{
+    padding: 12px 60px;
+    text-align: left;
+    font-size: 200%;
+    font-family: open sans;
+    color: #000;
+    margin: 0 20px 40px 0;
+    border: none;
+    background: rgba(0,0,0,.06);
+    font-weight: 700;
+    border-radius: 5px;
+}
+textarea{
+    border:0;
+    font-family: open sans;
+    color:#000;
+    background: rgba(0,0,0,.06);
+    font-size: 200%;
+    font-weight: 700;
+    border-radius: 5px;
+}
+.send button{
+    border:none;
+    margin-top: 3%;
+    color: #f04;
+    border: 1px solid #f65151;
+    background: white;
+    border-radius: 5px;
+    width:6%;
+    height:30px;
+    font-family: sans-serif;
+    font-weight: 700;
+    margin-left: 80%
+}
+.send button:hover{
+    color:white;
+    background: #FF0044;
+    cursor: pointer
+}
+footer{
+    color: #818181;
+    background: rgba(0,0,0,.06);
+    height:100%;
+    margin-top:10%;
+    padding: 50px 0 50px;
+    text-align: center
+}
+footer img{
+    width:30px
+}
