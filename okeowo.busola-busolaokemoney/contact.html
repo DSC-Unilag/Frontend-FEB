@@ -1,19 +1,21 @@
 <!doctype html>
 <html>
 	<head>
+		<meta charset="utf-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1">
 		<title>Contact Me</title>
 		<link rel="stylesheet" type="text/css" href="css/main.css" />
 	</head>
 	<body>
-	<div>
+	<div class="wrapper">
+		
+		<nav class="navbar"> <!-- Navigation -->
 
-		<nav> <!-- Navigation -->
-
-			<div> <!-- Brand -->
+			<div class="brand"> <!-- Brand -->
 				<a href="#"><img src=""></a>
 			</div> <!--/ Brand -->
 
-			<div> <!-- Nav Links -->
+			<div class="nav-link"> <!-- Nav Links -->
 				<ul>
 					<li><a href="#"> Home </a></li>
 					<li><a href="#"> About </a></li>
@@ -26,11 +28,60 @@
 
 		</nav> <!--/ Navigation -->
 
-		<section> <!-- Content -->
+		<section class="content"> <!-- Content -->
+			<h4>Send me a message I'll reply as soon as I can</h4>
+				<form class="form" method="post">
+					<div class="form-group">
+						<label>Name: </label>
+						<input placeholder="Name" class="form-control" type="text" name="name">
+					</div>
+					<div class="form-group">
+						<label>Email: </label>
+						<input placeholder="Email" class="form-control" type="email" name="e-mail">
+					</div>
+					<div class="form-group">
+						<label>Message: </label>
+						<textarea placeholder"Your message" class="form-control" rows="5" type="textarea" name="message"></textarea>
+					</div>
+					<div class="form-group">
+						<button class="btn btn-lg btn-dark" name="submit">Submit</button>
+					</div>
+				</form>
+			
+			<table class="table">
+				<thead>
+					<tr>
+						<th>Full Name</th>
+						<th>Email</th>
+						<th>Message</th>
+						<th>Action</th>
+					</tr>
+				</thead>
+				<tbody>
+					<tr>
+						<td>John Doe</td>
+						<td>johndoe@email.com</td>
+						<td>I'd love to meet with you in person</td>
+						<td>
+							<a class="" href="#">Edit</a>
+							<a class="" href="#">Delete</a>
+						</td>
+					</tr>
+					<tr>
+						<td>John Doe</td>
+						<td>johndoe@email.com</td>
+						<td>I'd love to meet with you in person</td>
+						<td>
+							<a class="" href="#">Edit</a>
+							<a class="" href="#">Delete</a>
+						</td>
+					</tr>
+				</tbody>
+			</table>
 	
 		</section> <!--/ Content -->
 
-		<footer> <!-- Footer -->
+		<footer class="foot"> <!-- Footer -->
 
 			<p>Copyright &copy; 2018</p>
 
