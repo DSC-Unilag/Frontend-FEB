@@ -1,38 +1,50 @@
 <!doctype html>
 <html>
 	<head>
-		<title></title>
+		<meta charset="utf-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+		<title>Home</title>
 		<link rel="stylesheet" type="text/css" href="css/main.css" />
+		<link rel="stylesheet" type="text/css" href="css/grid.css" />
 	</head>
 	<body>
-		<div>
+	<div class="wrapper">
 		
-			<nav> <!-- Navigation -->
+		<div class="nav-container"> <!-- Navigation -->
+			<div class="row">
+				<div class="col-s-12 container">
+					<div class="brand"> <!-- Brand -->
+						<a href="#">
+							<span>She</span>WritesCode
+						</a>
+					</div> <!--/ Brand -->
+					<label for="menu-check" class="menu-icon">
+						<span></span>
+						<span></span>
+						<span></span>
+					</label>
+					<input type="checkbox" id="menu-check">
+					<nav class="navbar"> <!-- Nav Links -->
+						<ul class="nav-menu">
+							<li><a href="index.html"> Home </a></li>
+							<li><a href="about.html"> About </a></li>
+							<li><a href="resume.html"> Resume </a></li>
+							<li><a href="services.html"> Service </a></li>
+							<li><a href="portfolio.html"> Portfolio </a></li>
+							<li><a href="contact.html"> Contact </a></li>
+						</ul>
+					</nav> <!--/ Nav Links -->
+				</div>
+			</div>
+		</div> <!--/ Navigation -->
 		
-				<div> <!-- Brand -->
-					<a href="#"><img src=""></a>
-				</div> <!--/ Brand -->
-		
-				<div> <!-- Nav Links -->
-					<ul>
-						<li><a href="#"> Home </a></li>
-						<li><a href="#"> About </a></li>
-						<li><a href="#"> Resume </a></li>
-						<li><a href="#"> Service </a></li>
-						<li><a href="#"> Portfolio </a></li>
-						<li><a href="#"> Contact </a></li>
-					</ul>
-				</div> <!--/ Nav Links -->
-		
-			</nav> <!--/ Navigation -->
-		
-			<section> <!-- Content -->
+			<section class="content"> <!-- Content -->
 				<div>
 					<h1>Hello</h1> <!-- Heading -->
 					<h3>I am Busola Okeowo</h3> <!-- Subheading -->
 	
-					<a href=""> About Me </a> <!-- Call to Action button -->
-					<a href=""> Hire Me </a> <!-- Call to Action button -->
+					<a href="about.html"> About Me </a> <!-- Call to Action button -->
+					<a href="contact.html"> Hire Me </a> <!-- Call to Action button -->
 				</div>
 		
 			</section> <!--/ Content -->

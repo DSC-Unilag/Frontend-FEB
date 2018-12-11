@@ -1,30 +1,204 @@
-/*
+/******************************
 Author: Okeowo Busola
+Email: busolaokemoney@gmail.com
+Name: She Writes Code;
+Description: A Portfolio Site;
 
-*/
+[Table of Contents]
+
+1. Fonts
+2. Body and some general stuff
+3. Home
+  3.1 Logo
+  3.2 Large screen main navigation
+  3.3 Small screen main navigation
+4. Contact
+5. Footer
+
+******************************/
+
+/***********
+1. Fonts
+***********/
+
+@import url('https://fonts.googleapis.com/css?family=Poppins:400,500,600,700,900');
+
+/*********************************
+2. Body and some general stuff
+*********************************/
+
 *{
-	box-sizing: border-box;
-}
-body{
-	margin: 0;
-	padding: 0;
-	font-style: "Segeo UI", "Helvetica Nue", sans-serif;
-	font-size: 1rem;
-	font-weight: 400;
-	line-height: 1.5;
-	color: #333;
-	text-align: left;
-	background-color: #fff;
+  box-sizing: border-box;
 }
 
-.wrapper {
-	display: block;
-	position: relative;
+body{
+  margin: 0;
+  padding: 0;
+  font-style: "Poppins", sans-serif;
+  font-size: 1rem;
+  font-weight: 400;
+  line-height: 1.5;
+  color: #2f2f2f;
+  text-align: left;
+  background-color: #fff;
 }
+
+.container {
+  padding: 15px;
+}
+/*********
+3 Home
+**********/
 
 .content {
-	padding: 2.5rem;
+  padding: 2.5rem;
 }
+
+/**********
+3.1 Logo
+**********/
+
+.brand {
+  padding: 1.8rem;
+  position: absolute;
+  top: 3.5rem;
+  -webkit-transform: translateY(-50%);
+  -moz-transform: translateY(-50%);
+  -ms-transform: translateY(-50%);
+  -o-transform: translateY(-50%);
+  transform: translateY(-50%);
+  left: 15px;
+}
+.brand a {
+  font-size: 1.7rem;
+  color: #1e1e27;
+  font-weight: 700;
+  text-decoration: none;
+  text-transform: uppercase;
+}
+.brand a span {
+  color: #fe4c50;
+}
+
+
+/********************************
+3.2 Large screen main navigation
+********************************/
+.nav-container{
+  width: 100%;
+  background: #FFFFFF;
+  box-shadow: 0 0 16px rgba(0, 0, 0, 0.15);
+  max-height: 7.1rem;
+  min-height: 7rem;
+}
+.navbar {
+  width: auto;
+  height: auto;
+  float: right;
+  padding-left: 0px;
+  padding-right: 0px;
+  background: #fff;
+}
+.nav-menu li {
+  display: inline-block;
+}
+.nav-menu li a {
+  display: block;
+  color: #1e1e27;
+  text-decoration: none;
+  font-size: 1rem;
+  font-weight: 500;
+  text-transform: uppercase;
+  padding: 15px;
+  -webkit-transition: color 0.3s ease;
+  -moz-transition: color 0.3s ease;
+  -ms-transition: color 0.3s ease;
+  -o-transition: color 0.3s ease;
+  transition: color 0.3s ease;
+}
+.nav-menu li a:hover {
+  color: #fe4c50;
+}
+#menu-check {
+  display: none;
+}
+
+
+/********************************
+3.3 Small screen main navigation
+********************************/
+@media (max-width: 800px) {
+  /* Styles for "average" mobile phone landscape; e.g., an iPhone  */
+
+  .menu-icon{
+    display: inline-block;
+    position: absolute;
+    right: 25px;
+    top: 30px;
+    padding: 15px;
+    width: 50px;
+    height: 50px;
+  }
+  .menu-icon:hover {
+    background-color: #fe4c50;
+  }
+  .menu-icon > span{
+    border-top: 2px solid #444;
+    height: 10px;
+    display: block;
+    width: 25px;
+    margin: 0;
+  }
+  .navbar {
+	position: absolute;
+	top: 7.8rem;
+    overflow-y: hidden;
+    background: #fff;
+    width: 100%;
+    height: 100vh;
+    left: 0px;
+    transition: all 0.5s linear;
+  }
+  .navbar > .nav-menu {
+  	margin: 0px;
+  	padding: 0px;
+  	list-style-type: none;
+  	list-style-position: inside;
+  }
+  .navbar > .nav-menu > li{
+    display: block;
+    position: relative;
+    right: 20px;
+    left: 0px;
+    text-align: center;
+  }
+  .navbar > .nav-menu > li:hover{
+	background-color: #fe4c50;
+	color: #fff;
+  }
+  .navbar > .nav-menu > li > a{
+    display: block;
+    color: inherit;
+  }
+  .navbar > .nav-menu > li > a:hover{
+    color: inherit;
+  }
+
+  #menu-check:not(:checked) + .navbar {
+    height: 0px;
+  }
+
+  #menu-check:(:checked) + .navbar {
+    height: 100vh !important;
+    overflow: scroll;
+  }
+
+}
+
+
+/***************
+4. Contact
+******************/
 
 .form-group {
     display: flex;
@@ -96,4 +270,50 @@ button {
 	font-size: 16px;
 	border-radius: 0.5rem;
 }
+
+
+/***************
+5. Footer
+******************/
+footer {
+	position: fixed;
+	bottom: 0px;
+	width: 100%;
+	margin: 1.5rem 0 0 0;
+	padding: 0;
+}
+footer > p {
+	text-align: center;
+	width: 100%;
+	padding: 1rem;
+	background-color: #2f2f2f;
+	color: #fff;
+	position: absolute;
+	bottom: 0px;
+	margin: 0;
+}
+
+
+
+/* Default styles for "standard" desktop or landscape tablet layout, probably about 1024px wide?  */
+
+@media all and (max-width: 800px) {
+  /* Styles for a narrow desktop or portrait tablet */
+}
+
+@media all and (max-width: 600px) {
+  /* Stylistic tweaks to fix the above layout when it gets down to narrower climes */
+}
+
+@media all and (max-width: 480px) {
+  /* Styles for "average" mobile phone landscape; e.g., an iPhone  */
+}
+
+@media all and (max-width: 320px) {
+  /* Styles for iPhone portrait and other really narrow layouts  */
+}
+
+@media all and (min-width: 1300px) {
+  /* Optional really wide layout for wide-screen monitors  */
+} 
 

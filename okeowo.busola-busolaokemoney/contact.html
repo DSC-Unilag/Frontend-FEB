@@ -3,31 +3,41 @@
 	<head>
 		<meta charset="utf-8">
 		<meta name="viewport" content="width=device-width, initial-scale=1">
-		<title>Contact Me</title>
+		<title>Contact</title>
 		<link rel="stylesheet" type="text/css" href="css/main.css" />
+		<link rel="stylesheet" type="text/css" href="css/grid.css" />
 	</head>
 	<body>
 	<div class="wrapper">
 		
-		<nav class="navbar"> <!-- Navigation -->
-
-			<div class="brand"> <!-- Brand -->
-				<a href="#"><img src=""></a>
-			</div> <!--/ Brand -->
-
-			<div class="nav-link"> <!-- Nav Links -->
-				<ul>
-					<li><a href="#"> Home </a></li>
-					<li><a href="#"> About </a></li>
-					<li><a href="#"> Resume </a></li>
-					<li><a href="#"> Service </a></li>
-					<li><a href="#"> Portfolio </a></li>
-					<li><a href="#"> Contact </a></li>
-				</ul>
-			</div> <!--/ Nav Links -->
-
-		</nav> <!--/ Navigation -->
-
+		<div class="nav-container"> <!-- Navigation -->
+			<div class="row">
+				<div class="col-s-12 container">
+					<div class="brand"> <!-- Brand -->
+						<a href="#">
+							<span>She</span>WritesCode
+						</a>
+					</div> <!--/ Brand -->
+					<label for="menu-check" class="menu-icon">
+						<span></span>
+						<span></span>
+						<span></span>
+					</label>
+					<input type="checkbox" id="menu-check">
+					<nav class="navbar"> <!-- Nav Links -->
+						<ul class="nav-menu">
+							<li><a href="index.html"> Home </a></li>
+							<li><a href="about.html"> About </a></li>
+							<li><a href="resume.html"> Resume </a></li>
+							<li><a href="services.html"> Service </a></li>
+							<li><a href="portfolio.html"> Portfolio </a></li>
+							<li><a href="contact.html"> Contact </a></li>
+						</ul>
+					</nav> <!--/ Nav Links -->
+				</div>
+			</div>
+		</div> <!--/ Navigation -->
+		
 		<section class="content"> <!-- Content -->
 			<h4>Send me a message I'll reply as soon as I can</h4>
 				<form class="form" method="post">
