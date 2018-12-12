@@ -6,6 +6,7 @@
 		<title>Contact</title>
 		<link rel="stylesheet" type="text/css" href="css/main.css" />
 		<link rel="stylesheet" type="text/css" href="css/grid.css" />
+		<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 	</head>
 	<body>
 	<div class="wrapper">
@@ -15,7 +16,7 @@
 				<div class="col-s-12 container">
 					<div class="brand"> <!-- Brand -->
 						<a href="#">
-							<span>She</span>WritesCode
+							<<span>She</span>WritesCode/>
 						</a>
 					</div> <!--/ Brand -->
 					<label for="menu-check" class="menu-icon">
@@ -31,7 +32,7 @@
 							<li><a href="resume.html"> Resume </a></li>
 							<li><a href="services.html"> Service </a></li>
 							<li><a href="portfolio.html"> Portfolio </a></li>
-							<li><a href="contact.html"> Contact </a></li>
+							<li><a class="active" href="contact.html"> Contact </a></li>
 						</ul>
 					</nav> <!--/ Nav Links -->
 				</div>
@@ -39,8 +40,12 @@
 		</div> <!--/ Navigation -->
 		
 		<section class="content"> <!-- Content -->
-			<h4>Send me a message I'll reply as soon as I can</h4>
-				<form class="form" method="post">
+			<div class="row px-5">
+			<div class="col-s-3 col-6">
+				<h4>Send me a message I'll reply as soon as I can</h4>
+			</div>
+			<div class="col-s-7 col-6">
+				<form class="contact-form form" method="post">
 					<div class="form-group">
 						<label>Name: </label>
 						<input placeholder="Name" class="form-control" type="text" name="name">
@@ -57,7 +62,8 @@
 						<button class="btn btn-lg btn-dark" name="submit">Submit</button>
 					</div>
 				</form>
-			
+			</div>
+			</div>
 			<table class="table">
 				<thead>
 					<tr>
@@ -93,7 +99,7 @@
 
 		<footer class="foot"> <!-- Footer -->
 
-			<p>Copyright &copy; 2018</p>
+			<p>&copy; 2018  <span>Made with <i class="fa fa-heart"></i> by <a href="#">shewritescode</a></span></p>
 
 		</footer> <!--/ Footer -->
 

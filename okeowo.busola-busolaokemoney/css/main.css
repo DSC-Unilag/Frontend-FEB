@@ -20,8 +20,7 @@ Description: A Portfolio Site;
 /***********
 1. Fonts
 ***********/
-
-@import url('https://fonts.googleapis.com/css?family=Poppins:400,500,600,700,900');
+@import url('https://fonts.googleapis.com/css?family=Ubuntu|Yatra+One|Monoton|Ubuntu+Mono');
 
 /*********************************
 2. Body and some general stuff
@@ -34,7 +33,7 @@ Description: A Portfolio Site;
 body{
   margin: 0;
   padding: 0;
-  font-style: "Poppins", sans-serif;
+  font-family: 'Ubuntu Mono', 'Ubuntu', 'Courier New', sans-serif;
   font-size: 1rem;
   font-weight: 400;
   line-height: 1.5;
@@ -42,17 +41,28 @@ body{
   text-align: left;
   background-color: #fff;
 }
-
+h1 {
+	
+}
 .container {
   padding: 15px;
 }
+.px-5 { padding: 0 3.5rem; }
+.pl-5 { padding-left: 3.5rem; }
+.pr-5 { padding-right: 3.5rem; }
+.py-5 { padding: 3.5rem 0; }
+a {
+	color: #fe4c50;
+}
+.content {
+  padding: 2.5rem;
+  position:relative;
+}
+
 /*********
 3 Home
 **********/
 
-.content {
-  padding: 2.5rem;
-}
 
 /**********
 3.1 Logo
@@ -68,6 +78,7 @@ body{
   -o-transform: translateY(-50%);
   transform: translateY(-50%);
   left: 15px;
+  font-family: 'Yatra One', 'Comic Sans MS', 'Courier New', cursive;
 }
 .brand a {
   font-size: 1.7rem;
@@ -75,6 +86,8 @@ body{
   font-weight: 700;
   text-decoration: none;
   text-transform: uppercase;
+  padding: 0;
+  margin: 0;
 }
 .brand a span {
   color: #fe4c50;
@@ -88,8 +101,8 @@ body{
   width: 100%;
   background: #FFFFFF;
   box-shadow: 0 0 16px rgba(0, 0, 0, 0.15);
-  max-height: 7.1rem;
   min-height: 7rem;
+  position: sticky;
 }
 .navbar {
   width: auto;
@@ -97,18 +110,22 @@ body{
   float: right;
   padding-left: 0px;
   padding-right: 0px;
-  background: #fff;
+  background: #fff418;
 }
 .nav-menu li {
   display: inline-block;
 }
+  .navbar > .nav-menu > li:hover{
+	background-color: #fe4c50;
+	color: #fff;
+  }
 .nav-menu li a {
   display: block;
   color: #1e1e27;
   text-decoration: none;
   font-size: 1rem;
   font-weight: 500;
-  text-transform: uppercase;
+  text-transform: lowercase;
   padding: 15px;
   -webkit-transition: color 0.3s ease;
   -moz-transition: color 0.3s ease;
@@ -116,8 +133,46 @@ body{
   -o-transition: color 0.3s ease;
   transition: color 0.3s ease;
 }
-.nav-menu li a:hover {
-  color: #fe4c50;
+  .navbar > .nav-menu > li a:hover::before {
+	background-color: #fe4c50;
+	color: #fff;
+	content: "<";
+  }
+
+  .navbar > .nav-menu > li a:hover::after {
+	background-color: #fe4c50;
+	color: #fff;
+	content: "/>";
+  }
+.nav-menu li a:hover, .navbar > .nav-menu > li > .active:hover{
+  color: #fff;
+}
+.nav-menu li a:active, .navbar > .nav-menu > li > .active:active {
+  color: #fff;
+}
+.navbar > .nav-menu > li a:active::before {
+	background-color: #fe4c50;
+	color: #fff;
+	content: "<";
+  }
+  .navbar > .nav-menu > li a:active::after{
+	background-color: #fe4c50;
+	color: #fff;
+	content: "/>";
+  }
+  
+.navbar > .nav-menu > li > .active{
+	color: #fe4c50;
+}
+.navbar > .nav-menu > li > .active::after {
+	background-color: #fff;
+	color: #fe4c50;
+	content: "/>";
+}
+.navbar > .nav-menu > li > .active::before {
+	background-color: #fff;
+	color: #fe4c50;
+	content: "<";
 }
 #menu-check {
   display: none;
@@ -127,7 +182,7 @@ body{
 /********************************
 3.3 Small screen main navigation
 ********************************/
-@media (max-width: 800px) {
+@media (max-width: 768px) {
   /* Styles for "average" mobile phone landscape; e.g., an iPhone  */
 
   .menu-icon{
@@ -150,14 +205,15 @@ body{
     margin: 0;
   }
   .navbar {
-	position: absolute;
-	top: 7.8rem;
+	position: relative;
+	top: 7rem;
     overflow-y: hidden;
     background: #fff;
-    width: 100%;
+    width: 100vw;
     height: 100vh;
     left: 0px;
     transition: all 0.5s linear;
+    display: block;
   }
   .navbar > .nav-menu {
   	margin: 0px;
@@ -172,10 +228,6 @@ body{
     left: 0px;
     text-align: center;
   }
-  .navbar > .nav-menu > li:hover{
-	background-color: #fe4c50;
-	color: #fff;
-  }
   .navbar > .nav-menu > li > a{
     display: block;
     color: inherit;
@@ -183,7 +235,7 @@ body{
   .navbar > .nav-menu > li > a:hover{
     color: inherit;
   }
-
+ }
   #menu-check:not(:checked) + .navbar {
     height: 0px;
   }
@@ -199,7 +251,9 @@ body{
 /***************
 4. Contact
 ******************/
-
+.contact-form > .form-group >label {
+	visibility: hidden;
+}
 .form-group {
     display: flex;
     flex: 0 0 auto;
