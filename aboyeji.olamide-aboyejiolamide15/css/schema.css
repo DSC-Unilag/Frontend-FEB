@@ -1,7 +1,7 @@
-*{
+ *{
     margin: 0;
     padding: 0;
-}
+} 
 body{
     background: #3a6186;  /* fallback for old browsers */
     background: -webkit-linear-gradient(to right, #89253e, #3a6186);  /* Chrome 10-25, Safari 5.1-6 */
@@ -36,6 +36,9 @@ h1,h2,h3{
   }
   .top-bar{
       background-color: antiquewhite ;
+      box-shadow: -3px -3px 1px black inset;
+      /* height : 10vh; */
+      
 
   }
   .right{
@@ -44,9 +47,13 @@ h1,h2,h3{
   .brand{
       display: inline;
   }
-  input{
-      border-radius: 4px;
+  select{
+       border-radius: 4px;
       padding: 6px 12px;
+  }
+  input{
+    border-radius: 4px;
+    padding: 6px 12px;
   }
   .top-bar input{
       margin-top: 0.5em;
