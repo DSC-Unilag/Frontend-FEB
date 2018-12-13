@@ -29,7 +29,6 @@
 						<ul class="nav-menu">
 							<li><a href="index.html"> Home </a></li>
 							<li><a href="about.html"> About </a></li>
-							<li><a href="resume.html"> Resume </a></li>
 							<li><a href="services.html"> Service </a></li>
 							<li><a href="portfolio.html"> Portfolio </a></li>
 							<li><a class="active" href="contact.html"> Contact </a></li>
@@ -38,33 +37,55 @@
 				</div>
 			</div>
 		</div> <!--/ Navigation -->
-		
+		<header class="header-contact">
+			<div class="caption">
+				<h1>Lets Talk</h1> <!-- Heading -->
+			</div>
+		</header>
 		<section class="content"> <!-- Content -->
 			<div class="row px-5">
-			<div class="col-s-3 col-6">
-				<h4>Send me a message I'll reply as soon as I can</h4>
-			</div>
-			<div class="col-s-7 col-6">
+			<div class="col-s-7 col-7 container">
+				<code>
+					if (uWannaWorkWithMe) { <br>
+						&nbsp; &nbsp; return "SEND ME A MESSAGE" <br>
+					}
+				</code>
 				<form class="contact-form form" method="post">
 					<div class="form-group">
-						<label>Name: </label>
-						<input placeholder="Name" class="form-control" type="text" name="name">
+						<!-- <label>Message: </label> -->
+						<textarea placeholder="Your Message" class="form-control" rows="5" type="textarea"></textarea>
 					</div>
-					<div class="form-group">
-						<label>Email: </label>
-						<input placeholder="Email" class="form-control" type="email" name="e-mail">
+					<div class="row">
+					<div class="form-group col-s-6">
+						<!-- <label>Name: </label> -->
+						<input placeholder="Your Name" class="form-control" type="text">
 					</div>
-					<div class="form-group">
-						<label>Message: </label>
-						<textarea placeholder"Your message" class="form-control" rows="5" type="textarea" name="message"></textarea>
+					<div class="form-group col-s-6">
+						<!-- <label>Email: </label> -->
+						<input placeholder="Your Email" class="form-control" type="email">
 					</div>
-					<div class="form-group">
-						<button class="btn btn-lg btn-dark" name="submit">Submit</button>
+					</div>
+					<div class="form-group col-s-12">
+						<button class="btn col-s-12"" name="submit">Submit</button>
 					</div>
 				</form>
 			</div>
+			<div class="col-s-5 col-5">
+				<h4>You can find me at</h4>
+				<p>Address line 1 <br>
+					Address line 2 <br> 
+					City, State <br> 
+					Country <br> 
+				</p>
+				<span>
+					<i class="fa fa-facebook"></i> &nbsp; 
+					<i class="fa fa-twitter"></i> &nbsp; 
+					<i class="fa fa-github"></i> &nbsp; 
+				</span>
 			</div>
-			<table class="table">
+			</div>
+			
+			<div class="row px-5"><div class="col-s-12"><table class="table">
 				<thead>
 					<tr>
 						<th>Full Name</th>
@@ -93,7 +114,7 @@
 						</td>
 					</tr>
 				</tbody>
-			</table>
+			</table></div></div>
 	
 		</section> <!--/ Content -->
 
