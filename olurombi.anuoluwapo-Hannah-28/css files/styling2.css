@@ -1,0 +1,37 @@
+body{
+    width: 100%;
+}
+.header span{
+    background-color: red
+}
+.navlist{
+    float: left;
+    width: 100%;
+}
+.navlist li{
+    margin-left: 10%;
+    padding-left: 0px;
+    padding-right: 0px;
+    font-size: 127%;
+}
+.navlist li:hover{
+    color:#FF0044;
+    transition-delay: 50ms;
+    transition-duration: 800ms;
+    transition-timing-function: ease-in-out
+}
+.navbar{
+    background-color: white;
+    max-width: 100%;
+    margin-top: -3.5vw;
+    font-size: 110%;
+}
+.navlist li::after {
+    content: "";
+    display: inline-block;
+    margin-bottom: 1px;
+    height: 3px;
+    background-color:rgba(128, 128, 128, 0.945);
+    width: 100%;
+    transition-duration: 0.5s
+}

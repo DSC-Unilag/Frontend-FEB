@@ -4,112 +4,173 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>Document</title>
-    <link rel = "stylesheet" href = "../css files/styling.css" />
+    <title>PORTFOLIO WEBSITE</title>
+    <link rel = "stylesheet" href = "../css files/styling.css">
+    <link  rel = "stylesheet" media = "screen and (max-width: 974px) and (min-width:765px)" href = "../css files/styling1.css">
+    <link rel = "stylesheet" media = "screen and (max-width: 764px) and (min-width: 320px)" href = "../css files/styling2.css">
 </head>
 <body>
-    <header>
-        <div class = "bg">
-            <img src = "../images files/bg1.gif" alt = "Background image" />
+    <div class = "header">
+        <h1><span>HAN</span>NAH</h1>
+        <h3>FRONT-END WEB DEVELOPER</h3>
+        <div class = "navbar">
+                <ul class = "navlist">
+                    <a href = "index.html"><li>HOME</li></a>
+                    <a href = "#about"><li>ABOUT</li></a>
+                    <a href = "#contact"><li>CONTACT</li></a>
+                </ul>
         </div>
-        <div class = "name">
-            <h2><span>HAN</span>NAH</h2>
-            <p>FRONT-END WEB DEVELOPER</p>
-        </div>
-        <div class ="navbar">
-            <ul class = "navlist">
-                <a href = "index.html"><li>HOME</li></a>
-                <a href = "#about"><li>ABOUT</li></a>
-                <a href = "#contact"><li>CONTACT</li></a>
-            </ul>
-        </div>
-        <div class = "story">
+    </div>
+    <div class = "container">
+        <img src = "../images files/bg1.gif">
+        <div class = "container_story">
             <h1>Front-end Web Developer.</h1>
             <p>Producing high quality responsive websites and exceptional user experience.</p>
-        </div>
-        <div class = "btn">
-            <div class = "know">
-                <a href = "#about">Get to know me</a>
+            <div class = "btn">
+                <div class = "know">
+                    <a href = "#about">Get to know me</a>
+                </div>
+                <div class = "help">
+                    <a href = "#contact">Available for hire</a>
+                </div>
             </div>
-            <div class = "help">
-                <a href = "#contact">Yes,I'm available for hire</a>
-            </div>
         </div>
-    </header>
-    <main id = "about">
-        <div class = "description">
-            <h1>About Me</h1>
+    </div>
+    <div id = "row1">
+        <div class = "img">
+            <img src = "../images files/img1.jpg">
+        </div>
+        <div class = "story">
+            <h5>This is me</h5>
+            <h2>Olurombi Anuoluwapo</h2>
+            <p>I love to develop responsive websites, thereby giving the users a good experience.</p>
+            <a href = "#about" class = "button">Discover</a>
+        </div>
+    </div>
+    <div id = "about">
+        <div class = "me">
+            <h1>About Myself</h1>
             <p>Get to know me as a person. You can find out about my background, experience and more below.</p>
         </div>
-        <div class = "me">
-            <h1>Who Am I?</h1>
-            <p>My name is Olurombi Anuoluwapo Hannah. I'm a Front-end Web Developer and Designer in Lagos State, Nigeria
-                with one-year of experience. I have lived in lots of different places and have worked in lots
-                of different jobs. I'm excited to bring my life experience to the process of building fantastic
-                looking and responsive websites. 
-            </p>
+        <div class = "myself">
+            <div class = "who">
+                <h3>Who am I?</h3>
+                <p>My name is Olurombi Anuoluwapo Hannah. I'm a Front-end Web Developer and Designer in Lagos State, Nigeria
+                    with one-year of experience. I have lived in lots of different places and have worked in lots
+                    of different jobs. I'm excited to bring my life experience to the process of building fantastic
+                    looking and responsive websites. </p>
+            </div>
+            <div class = "background">
+                <h3>Background.</h3>
+                <p>I hail from Ogun State. My date of birth is January 28th, 2000.
+                    I am currently a 300-level student of Systems Engineering in University of Lagos. I love to listen 
+                    to music and I love to engage myself in athletics. I am very friendly and I love to learn and acquire 
+                    lots of knowledge.</p>
+            </div>
         </div>
-        <div class = "pic">
-            <img src = "../images files/anu.jpg" alt = "My picture" />
+        <div class = "des">
+            <div class = "goals">
+                <h3>Goals.</h3>
+                <p>I want to master the process of building websites
+                    and increase my knowledge, skills and abilities in :    
+                </p>
+                <ul class = "skill">
+                    <li>HTML</li>
+                    <li>CSS</li>
+                    <li>JAVASCRIPT</li>
+                    <li>PYTHON</li>
+                    <li>C#</li>
+                </ul>
+                <p>I would love to work for a web design firm helping clients create
+                    an impressive online experience. I would also love to build beautiful 
+                    applications that will solve problems for the world.
+                </p>
+            </div>
+            <div class = "status">
+                    <h3>Status</h3>
+                    <h2>Available</h2>
+                    <p>I'm currently looking for projects from <span class = "date">January 2019.</span></p>
+                    <p>If you prefer email, get in touch with me via <span class ="mail">oluronbianu@gmail.com</span></p>
+            </div>
         </div>
-        <div class = "background">
-            <h1>Background.</h1>
-            <p>I hail from Ogun State. My date of birth is January 28th, 2000.
-                I am currently a 300-level student of Systems Engineering in University of Lagos. I love to listen 
-                to music and I love to engage myself in athletics. I am very friendly and I love to learn and acquire 
-                lots of knowledge.
-            </p>
-        </div>
-        <div class = "goal">
-            <h1>Goals.</h1>
-            <p>I want to master the process of building websites
-                and increase my knowledge, skills and abilities in :    
-            </p>
-            <ul class = "skill">
-                <li>HTML</li>
-                <li>CSS</li>
-                <li>JAVASCRIPT</li>
-                <li>PYTHON</li>
-                <li>C#</li>
-            </ul>
-            <p>I would love to work for a web design firm helping clients create
-                an impressive online experience. I would also love to build beautiful 
-                applications that will solve problems for the world.
-            </p>
-        </div>
-    </main>
-    <div class = "status">
-        <h1>Status</h1>
-        <h2>Available</h2>
-        <p>I'm currently looking for projects from <span class = "date">January 2019.</span></p>
-        <p>If you prefer email, get in touch with me via <span class ="mail">oluronbianu@gmail.com</span></p>
+    </div>
+    <div class = "request">
+        <h3>Requests.</h3>
+        <input type = "text" placeholder = "Search">
+    </div>
+    <div class = "table">
+        <table>
+            <tr class = "heading">
+                <th>Name</th>
+                <th>Email</th>
+                <th>Phone</th>
+                <th>Country</th>
+                <th>Message</th>
+            </tr>
+            <tr>
+                <td>Udojike Nmesoma Ngozi</td>
+                <td>udojyk@gmail.com</td>
+                <td>+234 903 220 0986</td>
+                <td>Nigeria</td>
+                <td>Hi Hannah, I would love to make a Web App Design, how
+                    can we meet to talk.
+                </td>
+            </tr>
+            <tr>
+                <td>Steven Brown</td>
+                <td>me@gmail.com</td>
+                <td>+152 25634 254 846</td>
+                <td>London,Uk.</td>
+                <td>Hello, Nice Designs...I would to make a simple To-Do List application.</td>
+            </tr>
+            <tr>
+                <td>Jon Bellion</td>
+                <td>bellion@yahoo.com</td>
+                <td>+88 019 118 54378 </td>
+                <td>United States of America</td>
+                <td>Hey, I need a website for my record label, Send me an email asap.</td>
+            </tr>
+        </table>
     </div>
     <div id = "contact">
-        <h1>CONTACT ME</h1>
-        <p>If you'd like to chat about a project please fill in the form below and I'll get back within 1 - 2 days.</p>
+        <h1>Interested in </h1> 
+        <h1>Working with me?</h1>
         <form>
-            <div class = "form">
-            <input type ="text" placeholder="Name" required>
-            <input type ="email" placeholder="Email" required>
-            <input type = "tel" placeholder="Phone" required>
-            <input type = "text" placeholder="Country" required>
-            <textarea placeholder="How can I help?" rows = "7" cols = "64" required></textarea>
+            <div class = "call">
+                <input type ="text" placeholder="Name" required>
+                <input type ="email" placeholder="Email" required>
+            </div>
+            <div class = "call2">
+                <input type = "tel" placeholder="Phone" required>
+                <input type = "text" placeholder="Country" required>
+            </div>
+            <div class = "call3">
+                    <textarea placeholder = "Message"  required></textarea>
             </div>
             <div class = "send">
-                <button>SEND</button>
-            </div>   
+                <a href = "#" class = "button">Send Message</a>
+            </div>
         </form>
+        <div class = "info">
+            <div class = "locate">
+                <img src = "../images files/locate.png">
+                <h6>Lagos,Nigeria</h6>
+                <p>University of Lagos</p>
+            </div>
+            <div class = "phone">
+                <img src = "../images files/phone.png">
+                <pre><h6>+ (234) 705 562 5874 </h6></pre>
+                <p>Anytime</p>
+            </div>
+            <div class = "gmail">
+                    <img src = "../images files/mail.png">
+                    <pre><h6>omomurewale@gmail.com </h6></pre>
+                    <p>Send me your complaints!</p>
+            </div>
+        </div>
     </div>
     <footer>
-        <p>&copy;Hannah Limited 2018. All Rights Reserved.</p>
-        <img src = "../images files/facebook.png">
-        <img src = "../images files/github.png">
-        <img src = "../images files/instagram.png">
-        <img src = "../images files/linkedin.png">
-        <img src = "../images files/location.png">
-        <img src = "../images files/mail.png">
-        <img src = "../images files/twitter.png">
-        <img src = "../images files/whatsapp.png">
+            <p>&copy;Hannah Limited 2018. All Rights Reserved.</p>
     </footer>
 </body>
 </html>

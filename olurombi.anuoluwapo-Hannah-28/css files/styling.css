@@ -1,308 +1,484 @@
 body{
-    margin:0;
-    padding:0;
+    margin: 0;
+    padding: 0;
 }
-.bg img{
-    width:100%;   
+.header{
+    max-width: 100%;
+    position: relative
 }
-.name{
-    margin-top:-67%;
-    margin-left:5%;
+.header h1{
+    margin-top: 4;
+    margin-left: 5%;
+    font-size: 200%;
+    font-family: 'Segoe UI';
+    color: rgba(128, 128, 128, 0.945);
+
 }
-.name h2{
-    color:white;
-    font-family: sans-serif;
-    font-size:150%
+.header span{
+    background-color: rgb(20, 20, 122);
+    padding-left: 7px;
+    padding-right: 7px
 }
-.name span{
-    background-color:#FF0044;
-}
-.name p{
-    color:white;
-    margin-top:-1%;
-    font-family:'Helvetica Neue'
+.header h3{
+    margin-left: 5%;
+    margin-top: -1vw;
+    font-size: 100%;
+    font-family:Helvetica;
+    color: rgba(128, 128, 128, 0.945);
 }
 .navlist{
-    margin-top:6%;
     display: inline-block;
     float: right;
-    list-style-type:none;  
+    list-style-type:none;
+    
 }
 .navlist li{
     display:inline-block;
-    padding:15px 15px 15px 15px;
-    color:white;
-    font-family:'Tahoma';
-    font-size:150%
+    padding-left: 3em;
+    padding-right: 3em;
+    color:rgb(20, 20, 122);
+    font-family:  Courier;
+    font-size: 120%;
+}
+.navlist li:hover{
+    color:#FF0044;
+    transition-delay: 50ms;
+    transition-duration: 800ms;
+    transition-timing-function: ease-in-out
 }
 .navbar{
-    margin-top:-9%;
-    position: relative;
-    top: 0;
-    width: 100%;
+    background-color: white;
+    max-width: 100%;
+    margin-top: -3.5vw;
+    font-size: 110%;
 }
 .navlist li::after {
     content: "";
     display: inline-block;
     margin-bottom: 1px;
     height: 3px;
-    background-color:#FF0044;
+    background-color:rgba(128, 128, 128, 0.945);
     width: 100%;
     transition-duration: 0.5s
 }
-.navlist li:hover{
-    color:rgba(209, 192, 192, 0.383);
-    transition-delay:150ms;
-    transition-duration:1000ms;
-    transition-property: all;
-    cursor:pointer;
-    transition-timing-function:ease-in;
+.container img{
+    margin-top: 0%;
+    width:100%;
+
 }
-.story{
-    color:white;
+.container_story{
     text-align: center;
-    margin-top:30%;
-    font-family:'Arial';
-    font-size:200%
+    margin-top: -50%;
+    color:white
+}
+.container_story h1{
+    font-family: serif;
+    font-size: 400%
+}
+.container_story p{
+    font-family: 'Trebuchet MS';
+    font-size: 300%
 }
 .btn{
-    text-align: center
+    margin-top: 10%
 }
-.know{
-    text-align:center;
-    margin-top:7%;
+.btn a{
+    text-decoration:  none;
 }
 .know a{
-    background:rgba(209, 192, 192, 0.383);
-    text-decoration: none;
-    color:white;
+    background-color: #FF0044;
     padding: 10px 30px 10px 30px;
-    margin-right: 180px
+    font-size:130%;
+    margin-left: -220px;
+    color:white;
+    border-radius: 5px
+}
+.know a:hover{
+    background-color:white;
+    color:#222222;
+    transition-delay: 50ms;
+    transition-duration: 800ms;
+    transition-timing-function: ease-in-out
 }
 .help{
-    text-align: center;
-    margin-top:-1.2%
+    margin-top: -24px
 }
 .help a{
-    background: #FF0044;
-    text-decoration:none;
-    color:white;
-    padding:10px 10px 10px 10px;
-    margin-left: 180px
+    background-color:rgba(128, 128, 128, 0.664);
+    padding: 10px 30px 10px 30px;
+    font-size:130%;
+    margin-left: 220px;
+    color: white;
+    border-radius:5px
 }
-main{
-    margin-top: 40%;
-    background: #EEEEEE;
-    text-align: center;
-    border-radius: 3%
+.help a:hover{
+    background-color:#E9E9FF;
+    color:#FF0044;
+    transition-delay: 50ms;
+    transition-duration: 800ms;
+    transition-timing-function: ease-in-out
 }
-.description h1{
-    font-family: cursive;
-    font-size: 500%;
+#row1{
+    margin-top:30%;
+    max-width:100%
 }
-.description p{
-    font-family: Times;
-    font-size:300%
+.img{
+    margin-left: 8%;
+    width:50%
+}
+.img img{
+    width:430px;
+    height:430px;
+    border-radius: 50%
+}
+.story{
+    margin-top:-420px;
+    margin-left:54%;  
+}
+.story h5{
+    font-family: 'Open Sans' ;
+    font-size: 180%;
+}
+.story h2{
+    text-transform: uppercase;
+    font-weight: bold;
+    font-family: sans-serif;
+    margin-top:-15px;
+    font-size:30px;
+    color:#444444
+}
+.story p{
+    font-family:sans-serif;
+    font-size:16px;
+    color:rgba(128, 128, 128, 0.945);
+}
+.story a{
+    padding: 0px 42px;
+    line-height: 50px;
+    background-image: linear-gradient(to right, #ff8490 0%, #fc62bd 48%, #ff8940 100%);
+    background-size: 200% auto;
+    color: #fff;
+    display: inline-block;
+    border-radius: 5px;
+    font-size: 13px;
+    font-family: "Roboto", sans-serif;
+    font-weight: 500;
+    transition: all 300ms linear 0s;
+    text-decoration: none
+}
+#about{
+    background-color: #F9F9FF;
+    margin-top:250px;
+    max-width:100%;
+    max-height: 100%
 }
 .me{
-    margin: 10%;
-    background-color: white;
-    border-radius: 20px;
-    border-bottom: 4px solid #CCCCCC
-}
-.me:hover{
-    border-bottom:4px solid #FF0044
+    text-align:center;
+    margin-left:10%;
+    padding-top:50px
 }
 .me h1{
-    font-family: cursive;
-    font-size: 400%;
+    font-family: sans-serif;
+    text-transform: uppercase;
+    font-size: 32px;
+    color: #222222
 }
 .me p{
-    font-family: Times;
-    font-size: 300%
+    font-family: Tahoma;
+    font-size:25px
 }
-.pic img{
-    width:70%
+.myself{
+    margin-left: 10%;
+    margin-top:100px
+}
+.who{
+    background: #fff;
+    width:40%;
+    border-radius:8px
+}
+.who h3{
+    font-family: sans-serif;
+    color:#222222;
+    font-size:35px;
+    padding-top: 30px;
+    padding-left:30px;
+    font-weight: bold
+}
+.who p{
+    color:rgba(128, 128, 128, 0.945);
+    font-size: 23px;
+    padding-left: 10px;
+    line-height: 1.4em
 }
 .background{
-    margin:10%;
-    background-color: white;
-    border-radius: 20px;
-    border-bottom: 4px solid #CCCCCC
+    background: #fff;
+    width:38%;
+    border-radius:8px;
+    margin-top:-21em;
+    margin-left:55%
 }
-.background:hover{
-    border-top: 4px solid #FF0044
-}
-.background h1{
-    font-family: cursive;
-    font-size: 400%
+.background h3{
+    font-family: sans-serif;
+    color:#222222;
+    font-size:35px;
+    padding-top: 30px;
+    padding-left:30px;
+    font-weight: bold
 }
 .background p{
-    font-family: Times;
-    font-size: 300%
+    color:rgba(128, 128, 128, 0.945);
+    font-size: 23px;
+    padding-left: 10px;
+    line-height: 1.4em
 }
-.goal{
-    margin:10%;
-    background-color: white;
-    border-radius: 20px;
-    border-bottom: 4px solid #CCCCCC
+.des{
+    margin-top:100px
 }
-.goal:hover{
-    border-bottom: 4px solid #FF0044
+.goals{
+    background: #fff;
+    width:36%;
+    border-radius:8px;
+    margin-left:10%;
+    height:100%
 }
-.goal h1{
-    font-family: cursive;
-    font-size: 400%
+.goals h3{
+    font-family: sans-serif;
+    color:#222222;
+    font-size:35px;
+    padding-top: 30px;
+    padding-left:30px;
+    font-weight: bold
 }
-.goal p{
-    font-family: Times;
-    font-size: 300%
+.goals p{
+    color:rgba(128, 128, 128, 0.945);
+    font-size: 23px;
+    padding-left: 10px;
+    line-height: 1.2em
 }
 .skill{
     text-align: center;
     list-style-type:none;
     font-family: sans-serif;
     color:white;
+    font-size:12px
 }
 .skill li:nth-child(1){
     background: #0399FF;
-    padding: 7px 5px 7px 5px;
-    width:12%;
+    padding: 6px 1px 6px 1px;
+    width:45px;
     border-radius: 6px;
-    margin-left:15%
+    margin-left:-40px;
+    margin-top:52px
 }
 .skill li:nth-child(2){
     background: #FF9904;
-    padding: 7px 5px 7px 5px;
-    width: 12%;
+    padding: 6px 1px 6px 1px;
+    width: 45px;
     border-radius: 6px;
-    margin-left: 30%;
-    margin-top: -2.5%
+    margin-left: 20px;
+    margin-top:-25px
 }
 .skill li:nth-child(3){
     background: #0399FF;
-    padding: 7px 5px 7px 5px;
-    width:12%;
+    padding: 6px 2px 6px 2px;
+    width:80px;
     border-radius: 6px;
-    margin-left:45%;
-    margin-top: -2.5%
+    margin-left:90px;
+    margin-top:-25px
 }
 .skill li:nth-child(4){
     background: #FF9904;
-    padding: 7px 5px 7px 5px;
-    width: 12%;
+    padding: 6px 1px 6px 1px;
+    width: 55px;
     border-radius: 6px;
-    margin-left: 60%;
-    margin-top: -2.5%
+    margin-left: 200px;
+    margin-top:-25px
 }
 .skill li:nth-child(5){
     background: #0399FF;
-    padding: 7px 5px 7px 5px;
-    width:12%;
+    padding: 6px 1px 6px 1px;
+    width:35px;
     border-radius: 6px;
-    margin-left:75%;
-    margin-top: -2.5%
+    margin-left:275px;
+    margin-top:-25px
 }
 .status{
-    margin:10%;
-    background-color: #EEEEEE;
-    border-radius: 20px;
-    border-bottom: 4px solid #CCCCCC;
-    text-align: center
+    background: #fff;
+    width:35%;
+    border-radius:8px;
+    margin-top:-27em;
+    margin-left:60%
 }
-.status:hover{
-    border-top: 4px solid #FF0044
-}
-.status h1{
-    font-family: cursive;
-    font-size: 300%;
-    padding-top:30px
-}
-.status h2{
-    font-family: cursive;
-    font-size: 400%;
-    color:#0399FF;
-    margin-top:-30px
+.status h3{
+    font-family: sans-serif;
+    color:#222222;
+    font-size:35px;
+    padding-top: 30px;
+    padding-left:30px;
+    font-weight: bold
 }
 .status p{
-    font-family:Times;
-    font-size: 300%
+    color:rgba(128, 128, 128, 0.945);
+    font-size: 23px;
+    padding-left: 10px;
+    line-height: 2em
 }
-.date{
-    font-family:'Trebuchet MS'
+.status h2{
+    font-family: sans-serif;
+    color: #0399FF;
+    font-size:40px;
+    padding-left: 25px;
+    line-height: 2em
 }
-.mail{
-    color:#0399FF
+.mail {
+    color:#FF0044
+}
+.request{
+    margin-left:10%;
+}
+.request h3{
+    font-family: cursive;
+    margin-top:100px;
+    font-size:45px
+}
+.request input{
+    border: 1px solid rgba(128, 128, 128, 0.945);
+    width:150px;
+    border-radius:7px;
+    padding: 10px 25px 10px 10px;
+    font-size: 17px;
+    margin-left:70%;
+    margin-top:-85px;
+    display: block
+}
+.table{
+    margin-top:100px;
+    width:90%;
+    margin-left:5%
+}
+table{
+    border-collapse:collapse;
+}
+th{
+    font-size:25px;
+    width:20%;
+    padding:25px 0px 25px 0px;
+    text-align: left;
+   
+}
+td {
+    width:20%;
+    text-align: left;
+    padding:35px 0px 35px 0px;
+    font-size:20px
+}
+tr{
+    color:#444444;
+    background: white
+}
+tr:nth-of-type(odd){
+    background-color:#F6F6FF
+}
+#contact{
+    margin-left:10%;
+    margin-top:100px
 }
 #contact h1{
-    font-size: 100%;
-    font-family:cursive;
-    color:white;
-    background: #FF0044;
-    text-align: center;
-    padding-top: 4px;
-    height: 30px;
-    width:10%;
-    border-radius: 5px;
-    margin-left: 10%
+    font-weight: bold;
+    font-family: 'Trebuchet MS';    
+    font-size:40px
 }
-#contact p{
-    text-align:center;
-    font-family: Times;
-    font-size:300%;
-    color: #444444;
-}
-.form{
-    margin-left: 20%;
-    margin-top:5%
-}
-.form input{
-    padding: 12px 60px;
-    text-align: left;
-    font-size: 200%;
+#contact input, .call3 textarea{
     font-family: open sans;
+    font-size:20px;
     color: #000;
-    margin: 0 20px 40px 0;
+    margin: 30px 10px 40px 3px;
     border: none;
-    background: rgba(0,0,0,.06);
-    font-weight: 700;
+    background: #F6F6FF;
+    font-weight: bold;
     border-radius: 5px;
+    padding:20px 0px 20px 0px
 }
-textarea{
-    border:0;
-    font-family: open sans;
-    color:#000;
-    background: rgba(0,0,0,.06);
-    font-size: 200%;
-    font-weight: 700;
-    border-radius: 5px;
+.call3 textarea{
+    padding-right:290px;
+    padding-bottom:135px
 }
-.send button{
-    border:none;
-    margin-top: 3%;
-    color: #f04;
-    border: 1px solid #f65151;
-    background: white;
-    border-radius: 5px;
-    width:6%;
-    height:30px;
-    font-family: sans-serif;
-    font-weight: 700;
-    margin-left: 80%
+.send a{
+    padding: 0px 20px;
+    line-height: 50px;
+    background-image: linear-gradient(to right, #ff8490 0%, #fc62bd 48%, #ff8940 100%);
+    background-size: 200% auto;
+    color: #fff;
+    display: inline-block;
+    border-radius: 4px;
+    font-size: 13px;
+    font-family: "Roboto", sans-serif;
+    font-weight: 500;
+    transition: all 300ms linear 0s;
+    text-decoration: none
 }
-.send button:hover{
-    color:white;
-    background: #FF0044;
-    cursor: pointer
+.info{
+    margin-left:60%
 }
-footer{
-    color: #818181;
-    background: rgba(0,0,0,.06);
-    height:100%;
-    margin-top:10%;
-    padding: 50px 0 50px;
-    text-align: center
+.locate{
+    margin-top:-560px
 }
-footer img{
+.locate img{
     width:30px
+}
+.locate h6{
+    font-family: cursive;
+    font-weight: bold;
+    font-size: 20px;
+    color:#222222;
+    margin-left:12%;
+    margin-top:-37px
+}
+.locate p{
+    font-size:18px;
+    color:#777777;
+    margin-left:12%
+}
+.phone img{
+    width:30px;
+    margin-top:70px
+}
+.phone h6{
+    font-family: cursive;
+    font-weight: bold;
+    font-size: 20px;
+    color:#222222;
+    margin-left:12%;
+    margin-top:-50px
+}
+.phone p{
+    font-size:18px;
+    color:#777777;
+    margin-left:12%
+}
+.gmail img{
+    width:30px;
+    margin-top:70px
+}
+.gmail h6{
+    font-family: cursive;
+    font-weight: bold;
+    font-size: 20px;
+    color:#222222;
+    margin-left:12%;
+    margin-top:-50px
+}
+.gmail p{
+    font-size:18px;
+    color:#777777;
+    margin-left:12%
+}
+footer {
+    font-size:20px;
+    color:white;
+    background:#000410;
+    height: 100%;
+    margin-top: 20%;
+    padding: 50px 0 50px;
+    text-align: center;
 }
