@@ -67,10 +67,56 @@
     .imgg {width: 200px;
     height: 200px;}
 
-    li {line-height: 15px;
+    li {line-height: 20px;
         margin: auto;
-        font-size: 16px;
-    }
+        font-size: 20px;}
+
+    h4 { font-size: 20px;}
+
+    .contact {font-size: 20px;}
+
+    .name, .email, .message {
+        width: 80%;
+        height: 25px;
+        border-radius: 0.5em; }
+
+    .message {height: 100px;
+    padding: 10px;
+    border-color: rgb(92, 92, 94);}
+
+   .input {width: 40%;
+    align-content: left;}
+   .contactm {width: 40%;
+    align-content: right;}
+
+    .form {display: flex;}
+
+    button {margin-top: 25px; 
+    height: 30px;
+    background-color: rgb(28, 127, 184);
+    border-radius: 0.7em;}
+    button:hover {background-color: rgb(52, 163, 233);}
+
+    .send {  margin-bottom: 30px;}
+
+    .hr { height: 5px;
+    background-color:  rgb(28, 127, 184);}
+
+    .search {width: 15%;
+        height: 25px;
+        border-radius: 0.5em;}
+
+    .h4 {margin-bottom: 5px;}
+
+    table {background-color: rgb(52, 163, 233);
+    margin-top: 30px;
+    margin-bottom: 50px;
+    border-radius: 0.5em;
+    padding: 5px;}
+
+    th, td {background-color: rgb(227, 232, 236);
+    padding: 7px;
+    border-radius: 0.2em;}
 }
 
 
@@ -146,7 +192,56 @@
         li {line-height: 15px;
             margin: auto;
          font-size: 16px;}
+
+    h4 { font-size: 20px;}
+
+    .contact {font-size: 20px;}
+
+    .name, .email, .message {
+        width: 90%;
+        height: 25px;
+        border-radius: 0.5em; }
+
+    .message {height: 100px;
+        width: 120%;
+    padding: 10px;
+    border-color: rgb(92, 92, 94);}
+
+   .input {width: 40%;
+    align-content: left;}
+   .contactm {width: 40%;
+    align-content: right;}
+
+    .form {display: flex;}
+
+    button {margin-top: 25px; 
+    height: 30px;
+    background-color: rgb(28, 127, 184);
+    border-radius: 0.7em;}
+    button:hover {background-color: rgb(52, 163, 233);}
+
+    .send {  margin-bottom: 30px;}
+
+    .hr { height: 5px;
+    background-color:  rgb(28, 127, 184);}
+
+    .search {width: 20%;
+        height: 25px;
+        border-radius: 0.5em;}
+
+    .h4 {margin-bottom: 5px;}
+
+    table {background-color: rgb(52, 163, 233);
+    margin-top: 30px;
+    margin-bottom: 50px;
+    border-radius: 0.5em;
+    padding: 5px;}
+
+    th, td {background-color: rgb(227, 232, 236);
+    padding: 7px;
+    border-radius: 0.2em;}
 }
+
 
 @media screen and (max-width: 621px){
     body {
@@ -219,6 +314,54 @@
         height: 200px;}
 
     li {line-height: 15px;
-            margin: auto;
-                font-size: 16px;}
+    margin: auto;
+      font-size: 16px;}
+
+     h4 { font-size: 20px;}
+
+    .contact {font-size: 20px;}
+
+    .name, .email, .message {
+        width: 150%;
+        height: 25px;
+        border-radius: 0.5em; }
+
+    .message {height: 100px;
+    padding: 10px;
+    border-color: rgb(92, 92, 94);}
+
+   .input {width: 40%;
+    align-content: left;}
+   .contactm {width: 40%;
+    align-content: right;}
+
+    .form {display: grid;}
+
+    button {margin-top: 25px; 
+    height: 30px;
+    background-color: rgb(28, 127, 184);
+    border-radius: 0.7em;}
+    button:hover {background-color: rgb(52, 163, 233);}
+
+    .send {  margin-bottom: 30px;}
+
+    .hr { height: 5px;
+    background-color:  rgb(28, 127, 184);}
+
+    .search {width: 30%;
+        height: 25px;
+        border-radius: 0.5em;}
+
+    .h4 {margin-bottom: 5px;}
+
+    table {background-color: rgb(52, 163, 233);
+    margin-top: 30px;
+    margin-bottom: 50px;
+    border-radius: 0.5em;
+    padding: 5px;}
+
+    th, td {background-color: rgb(227, 232, 236);
+    padding: 7px;
+    border-radius: 0.2em;}
+
 }
