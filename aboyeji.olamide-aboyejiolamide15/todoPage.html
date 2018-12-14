@@ -3,7 +3,7 @@
 <head>
     <meta charset="utf-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <title>Page Title</title>
+    <title>Schema Todos</title>
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <link rel="stylesheet" type="text/css" media="screen" href="css/schema.css" />
     <link rel="stylesheet" type="text/css" media="screen" href="css/schemaUserPages.css" />
@@ -24,21 +24,38 @@
     </div>
     <div class="todos">
         <div style="position : relative;" id="all" class="todo-group"> 
+            <div class="todoCategoryHeader"> all todos</div>
             <div class="newTodo">Add <button class="newTodoButton"> &#43; </button></div>
+            <div style="margin-right:auto; margin-left:auto; width:80%">
+                <ul id="allUL">
+                    <li>
+                        <div>Go Home</div>
+                        <div>27/11/12 12:23</div>
+                    </li>
+                    <li>
+                        <div>Buy A Car</div>
+                        <div>19/03/23 14:15</div>
+                    </li>
+                    <li>
+                        <div>Groceries</div>
+                        <div>12/12/18 00:06</div>
+                    </li>
+                </ul>
+            </div>
             <div class="newTodoBlock">
                 <div style="margin-bottom: 10px">
                     <h4 style="text-align:center; display: inline">Add New Todo</h4>
                     <h2 id="closeButton" style="display:inline; position: absolute; right:0; top:0; color:sienna">X</h2>
                 </div>
                 
-                <form action="#">
+                <form action="">
                     <div style="margin-bottom:30px" >
                         <label for="todoText">ToDo:</label>
-                        <input required style="width:50%" id="todoText" type="text">
+                        <input name="todoText" required style="width:50%" id="todoText" type="text">
                     </div>
                     <div style="margin-bottom:30px">
                         <label for="todoCategory">ToDo Category:</label>
-                        <select id="todocategory">
+                        <select id="todoCategory">
                             <option value="personalTodo">Personal</option>
                             <option value="homeTodo">Home</option>
                             <option value="workTodo">Work</option>
@@ -55,13 +72,28 @@
             </div>
         </div>
         <div id="personal" class="todo-group">
-                <div class="todoCategoryHeader">Personal Todos</div>
+            <div class="todoCategoryHeader">Personal Todos</div>
+            <div style="margin-right:auto; margin-left:auto; width:80%">
+                <ul id="personalUL">
+
+                </ul>
+            </div>
         </div>
         <div id="home" class="todo-group">
-                <div class="todoCategoryHeader">Home Todos</div>
+            <div class="todoCategoryHeader">Home Todos</div>
+            <div style="margin-right:auto; margin-left:auto; width:80%">
+                <ul id="homeUL">
+
+                </ul>
+            </div>
         </div>
         <div id="work" class="todo-group">
-                <div class="todoCategoryHeader">Work Todos</div>
+            <div class="todoCategoryHeader">Work Todos</div>
+            <div style="margin-right:auto; margin-left:auto; width:80%">
+                <ul id="workUL">
+
+                </ul>
+            </div>
         </div>
     </div>
     <script src="js/schema.js"></script>   

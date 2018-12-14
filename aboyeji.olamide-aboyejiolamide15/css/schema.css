@@ -3,15 +3,13 @@
     padding: 0;
 } 
 body{
-    background: #3a6186;  /* fallback for old browsers */
-    background: -webkit-linear-gradient(to right, #89253e, #3a6186);  /* Chrome 10-25, Safari 5.1-6 */
-    background: linear-gradient(to right, #89253e, #3a6186); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
-
+    background: #3a6186;  /* old browsers */
+    background: -webkit-linear-gradient(to right, #89253e, #3a6186);  
+    background: linear-gradient(to right, #89253e, #3a6186); 
 }
 h1,h2,h3{
     font-family: 'Open Sans', sans-serif;
     font-size: 40px ;
-    
 }
 .container {
     padding-right: 15px;
@@ -38,8 +36,6 @@ h1,h2,h3{
       background-color: antiquewhite ;
       box-shadow: -3px -3px 1px black inset;
       /* height : 10vh; */
-      
-
   }
   .right{
       float: right;
@@ -89,8 +85,6 @@ h1,h2,h3{
 .signup form{
     padding:5px 10px;
 }
-
- 
 @media screen and (max-width:768px){
     .right{
         float: none;
@@ -99,7 +93,6 @@ h1,h2,h3{
         display: unset;
     }
     .signup {
-        
         width: 80%;
         margin-left: auto;
         margin-right: auto;

@@ -115,3 +115,12 @@
 		display: none;
 	}
 }
+li{
+	padding: 20px;
+}
+li:nth-of-type(2n){
+	background-color: #bbc8d4;
+}
+li:hover{
+	background-color: #999999;
+}
