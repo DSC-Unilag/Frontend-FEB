@@ -3,13 +3,9 @@
 <head>
 	<title>Online To-Do List</title>
 	<link rel="stylesheet" href="../CSS/style(main).css">
-	<script type="text/javascript" src="user.js"></script>
-	<script type="text/javascript">
-		var username = localStorage.getItem("username");
-		document.getElementById("message").innerHTML= `<h3> Welcome ${username} </h3>`
-	</script>
+	<script type="text/javascript" src="main.js"></script>
 </head>
-<body>
+<body onload="get()">
 	<div id="header">
 	<img src="../Images/notepad.png" alt="notepad"><h2>Your Online To-do List</h2>
 	</div>
@@ -20,7 +16,6 @@
 		</button>
 	</div>
 	<div id="message"></div>
-
 	<ul class="nav">
 		<a href="../HTML/Today.html"><li>Today</li></a>
 		<a href="../HTML/All.html"><li>All</li></a>
