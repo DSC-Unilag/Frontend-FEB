@@ -3,6 +3,7 @@
 <head>
 	<title>Online Todo List</title>
 	<link rel="stylesheet" href="../CSS/style.css">
+	<script type="text/javascript" src="user.js"></script>
 </head>
 <body>
 	<div id="header">
@@ -14,10 +15,14 @@
 		<input type="text" name="E-mail" required >
 		<br>
 		<br>
+		<h5>Username</h5>
+		<input type="text" id="username">
+		<br>
+		<br>
 		<h5>Password:</h5>
 		<input type="password" name="Password" maxlength="4"  method="POST" required >
 		<br><br><br>
-		<a href="../HTML/main.html"><button type="button">Login</button></a>
+		<a href="../HTML/main.html"><button type="button" onclick="storeUserName()">Login</button></a>
 	</form>
 	<div id="footer">
 	<p>&copy Stans Enterprises</p>

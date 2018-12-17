@@ -3,6 +3,11 @@
 <head>
 	<title>Online To-Do List</title>
 	<link rel="stylesheet" href="../CSS/style(main).css">
+	<script type="text/javascript" src="user.js"></script>
+	<script type="text/javascript">
+		var username = localStorage.getItem("username");
+		document.getElementById("message").innerHTML= `<h3> Welcome ${username} </h3>`
+	</script>
 </head>
 <body>
 	<div id="header">
@@ -14,6 +19,7 @@
 		<a href="../HTML/main.html"><img src="../Images/add.png" alt="add"></a>
 		</button>
 	</div>
+	<div id="message"></div>
 
 	<ul class="nav">
 		<a href="../HTML/Today.html"><li>Today</li></a>

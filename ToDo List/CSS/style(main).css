@@ -84,3 +84,8 @@
 		background-color: #66616180;
 		color: #fffc;
 	}
+
+	.message{
+		font-family: cursive;
+		font-size: 15px;
+	}
