@@ -61,6 +61,7 @@ body{
     background-size: cover;
     color:white;
     height: 700px;
+    width:100%
 }
 .header a{
     color:mintcream;
@@ -235,7 +236,7 @@ body{
     background: #fff;
     width:35%;
     border-radius:8px;
-    margin-top:-27em;
+    margin-top:-24em;
     margin-left:60%
 }
 .status h3{
@@ -250,7 +251,7 @@ body{
     color:rgba(128, 128, 128, 0.945);
     font-size: 23px;
     padding-left: 10px;
-    line-height: 2em
+    line-height: 1.6em
 }
 .status h2{
     font-family: sans-serif;
