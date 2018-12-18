@@ -25,16 +25,18 @@
 	overflow: auto;
 	background-color: antiquewhite;
 }
-.sidenav a{
+.sidenav .navButton{
 	text-decoration: none;
 	color: sienna;
 	 display: block;
     padding: 1em 1em;
     text-align: center; 
 }
-.sidenav a:hover {
+.sidenav .navButton:hover {
 	background-color: #3a6186 ;
+	cursor: pointer;
 }
+
 .newTodo{
 	float: right;
 	margin-right: 5px;
@@ -83,6 +85,16 @@
 	font-weight: 600;
 	color: #89253e;
 }
+.delete{
+	float: right;
+	color: red;
+	font-size: 25px;
+	font-weight: 900px;
+	padding: 5px 15px;
+}
+.delete:hover{
+	cursor: pointer;
+}
 @media screen and (max-width : 768px) {
 	.sidenav {
 		width: 100%;
@@ -91,7 +103,7 @@
 		height: 100%;
 		position: relative;
 	}
-	.sidenav a{
+	.sidenav .navButton{
 		display: inline;
 	}
 	.todos{
@@ -101,26 +113,38 @@
 	}
 }
 @media screen and (max-width: 506px){
-	.sidenav a{
+	.sidenav .navButton{
 		padding: 14px 10px;
 	}
 }
 @media screen and (max-width: 406px){
-	.sidenav a{
+	.sidenav .navButton{
 		padding: 14px 8px;
 	}
 }
-@media screen and (max-width: 386px){
+/* @media screen and (max-width: 386px){
 	.hide{
 		display: none;
 	}
-}
+} */
 li{
 	padding: 20px;
 }
-li:nth-of-type(2n){
+/* li:nth-of-type(2n){
 	background-color: #bbc8d4;
-}
+} */
 li:hover{
 	background-color: #999999;
+}
+li[class=personalcolor]{
+	background-color: aliceblue ;
+}
+li[class=homecolor]{
+	background-color: darkgray ;
+}
+li[class=workcolor]{
+	background-color: wheat ;
+}
+.hide{
+	display: none;
 }
