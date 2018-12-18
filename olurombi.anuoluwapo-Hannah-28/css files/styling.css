@@ -1,26 +1,26 @@
 body{
-    margin: 0;
-    padding: 0;
+    margin:0;
+    padding: 0
 }
-.header{
-    max-width: 100%;
-    position: relative
+.navbar{
+    background-color: white;
+    width: 100%
 }
-.header h1{
+.navbar span{
+    background-color: rgb(20, 20, 122);
+    padding-left: 6px;
+    padding-right: 6px
+}
+.navbar h1{
     margin-top: 4;
-    margin-left: 5%;
+    margin-left: 2%;
     font-size: 200%;
     font-family: 'Segoe UI';
     color: rgba(128, 128, 128, 0.945);
 
 }
-.header span{
-    background-color: rgb(20, 20, 122);
-    padding-left: 7px;
-    padding-right: 7px
-}
-.header h3{
-    margin-left: 5%;
+.navbar h3{
+    margin-left: 2%;
     margin-top: -1vw;
     font-size: 100%;
     font-family:Helvetica;
@@ -30,12 +30,11 @@ body{
     display: inline-block;
     float: right;
     list-style-type:none;
-    
+    margin-top:-105px;
 }
 .navlist li{
     display:inline-block;
-    padding-left: 3em;
-    padding-right: 3em;
+    padding :45px;
     color:rgb(20, 20, 122);
     font-family:  Courier;
     font-size: 120%;
@@ -46,12 +45,6 @@ body{
     transition-duration: 800ms;
     transition-timing-function: ease-in-out
 }
-.navbar{
-    background-color: white;
-    max-width: 100%;
-    margin-top: -3.5vw;
-    font-size: 110%;
-}
 .navlist li::after {
     content: "";
     display: inline-block;
@@ -61,79 +54,57 @@ body{
     width: 100%;
     transition-duration: 0.5s
 }
-.container img{
-    margin-top: 0%;
-    width:100%;
-
-}
-.container_story{
-    text-align: center;
-    margin-top: -50%;
-    color:white
-}
-.container_story h1{
-    font-family: serif;
-    font-size: 400%
-}
-.container_story p{
-    font-family: 'Trebuchet MS';
-    font-size: 300%
-}
-.btn{
-    margin-top: 10%
-}
-.btn a{
-    text-decoration:  none;
-}
-.know a{
-    background-color: #FF0044;
-    padding: 10px 30px 10px 30px;
-    font-size:130%;
-    margin-left: -220px;
+.header{
+    background: url("../images files//bg1.gif" );
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
     color:white;
-    border-radius: 5px
+    height: 700px;
 }
-.know a:hover{
-    background-color:white;
-    color:#222222;
+.header a{
+    color:mintcream;
+    padding: 10px 20px;
+    margin: 30px;
+    display: inline-block;
+    border-radius:  12px;
+    font-size: 22px;
+    background-color: #666;
+    text-decoration: none;
+    border: 2px solid beige;
+}
+.header h1{
+    font-family: serif;
+    font-size: 370%;
+    margin-left:5%
+}
+.header a:hover{
+    background-color:#FF0044;
+    color:black;
     transition-delay: 50ms;
     transition-duration: 800ms;
     transition-timing-function: ease-in-out
 }
-.help{
-    margin-top: -24px
+.mask{
+    text-align: center;
+    padding-top: 10%
 }
-.help a{
-    background-color:rgba(128, 128, 128, 0.664);
-    padding: 10px 30px 10px 30px;
-    font-size:130%;
-    margin-left: 220px;
-    color: white;
-    border-radius:5px
+.header p{
+    font-family: 'Trebuchet MS';
+    font-size: 250%
 }
-.help a:hover{
-    background-color:#E9E9FF;
-    color:#FF0044;
-    transition-delay: 50ms;
-    transition-duration: 800ms;
-    transition-timing-function: ease-in-out
-}
-#row1{
-    margin-top:30%;
-    max-width:100%
-}
-.img{
-    margin-left: 8%;
-    width:50%
+.description{
+    margin-top: 100px
 }
 .img img{
-    width:430px;
-    height:430px;
-    border-radius: 50%
+    width:440px;
+    height:440px;
+    border-radius: 50%;
+    margin-left:3%
 }
 .story{
     margin-top:-420px;
-    margin-left:54%;  
+    margin-left:68%;  
 }
 .story h5{
     font-family: 'Open Sans' ;
@@ -255,52 +226,10 @@ body{
     padding-left: 10px;
     line-height: 1.2em
 }
-.skill{
+.goals pre{
+    color:#0399FF;
     text-align: center;
-    list-style-type:none;
-    font-family: sans-serif;
-    color:white;
-    font-size:12px
-}
-.skill li:nth-child(1){
-    background: #0399FF;
-    padding: 6px 1px 6px 1px;
-    width:45px;
-    border-radius: 6px;
-    margin-left:-40px;
-    margin-top:52px
-}
-.skill li:nth-child(2){
-    background: #FF9904;
-    padding: 6px 1px 6px 1px;
-    width: 45px;
-    border-radius: 6px;
-    margin-left: 20px;
-    margin-top:-25px
-}
-.skill li:nth-child(3){
-    background: #0399FF;
-    padding: 6px 2px 6px 2px;
-    width:80px;
-    border-radius: 6px;
-    margin-left:90px;
-    margin-top:-25px
-}
-.skill li:nth-child(4){
-    background: #FF9904;
-    padding: 6px 1px 6px 1px;
-    width: 55px;
-    border-radius: 6px;
-    margin-left: 200px;
-    margin-top:-25px
-}
-.skill li:nth-child(5){
-    background: #0399FF;
-    padding: 6px 1px 6px 1px;
-    width:35px;
-    border-radius: 6px;
-    margin-left:275px;
-    margin-top:-25px
+    font-size: 15px
 }
 .status{
     background: #fff;
@@ -353,8 +282,8 @@ body{
 }
 .table{
     margin-top:100px;
-    width:90%;
-    margin-left:5%
+    width:95%;
+    margin-left:2.5%
 }
 table{
     border-collapse:collapse;
@@ -380,8 +309,9 @@ tr:nth-of-type(odd){
     background-color:#F6F6FF
 }
 #contact{
-    margin-left:10%;
-    margin-top:100px
+    margin-left:2%;
+    margin-top:100px;
+    width:70%
 }
 #contact h1{
     font-weight: bold;
@@ -400,7 +330,7 @@ tr:nth-of-type(odd){
     padding:20px 0px 20px 0px
 }
 .call3 textarea{
-    padding-right:290px;
+    padding-right:150px;
     padding-bottom:135px
 }
 .send a{
@@ -418,29 +348,29 @@ tr:nth-of-type(odd){
     text-decoration: none
 }
 .info{
-    margin-left:60%
+    margin-left:75%
 }
 .locate{
-    margin-top:-560px
+    margin-top:-620px
 }
 .locate img{
-    width:30px
+    width:20px
 }
 .locate h6{
     font-family: cursive;
     font-weight: bold;
     font-size: 20px;
     color:#222222;
-    margin-left:12%;
-    margin-top:-37px
+    margin-left:25%;
+    margin-top:-30px
 }
 .locate p{
     font-size:18px;
     color:#777777;
-    margin-left:12%
+    margin-left:25%
 }
 .phone img{
-    width:30px;
+    width:20px;
     margin-top:70px
 }
 .phone h6{
@@ -448,16 +378,16 @@ tr:nth-of-type(odd){
     font-weight: bold;
     font-size: 20px;
     color:#222222;
-    margin-left:12%;
-    margin-top:-50px
+    margin-left:25%;
+    margin-top:-42px
 }
 .phone p{
     font-size:18px;
     color:#777777;
-    margin-left:12%
+    margin-left:25%
 }
 .gmail img{
-    width:30px;
+    width:20px;
     margin-top:70px
 }
 .gmail h6{
@@ -465,20 +395,23 @@ tr:nth-of-type(odd){
     font-weight: bold;
     font-size: 20px;
     color:#222222;
-    margin-left:12%;
-    margin-top:-50px
+    margin-left:25%;
+    margin-top:-40px
 }
 .gmail p{
     font-size:18px;
     color:#777777;
-    margin-left:12%
+    margin-left:25%
 }
 footer {
     font-size:20px;
-    color:white;
+    color:#818181;
     background:#000410;
     height: 100%;
-    margin-top: 20%;
-    padding: 50px 0 50px;
+    margin-top: 30%;
+    padding: 40px 0 40px;
     text-align: center;
+}
+footer img{
+    width:30px
 }
