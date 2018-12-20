@@ -5,10 +5,12 @@
         background-size: cover;
         background-repeat: no-repeat;}
 
-    #navbar { background-color: rgb(28, 127, 184);}
+    #navbar { background-color: rgb(28, 127, 184);
+    margin: -10px;}
 
     footer { background-color: rgb(28, 127, 184);
-    text-align: right;}
+    text-align: right;
+    margin: -10px;}
     
     .e { text-decoration: none;
         margin: 30px 15px;
@@ -18,13 +20,13 @@
         border-radius: 0.5em;
         line-height: 28px;
         padding: 5px;}
-    .e:hover {
-        background-color: rgb(206, 206, 212);}
+    .e:hover {background-color: rgb(206, 206, 212);}
 
     .c { margin-top: 15px;
     float: right;}
 
-    .d { float: left;}
+    .d { float: left;
+    margin-left: 15px;}
 
     .a {
         font-size: 30px;
@@ -34,12 +36,13 @@
 
     hr {width: 100%;}
 
-    img {transform: rotate(270deg);
+    .img {transform: rotate(270deg);
     width: 40%;
     height: 600px;
     border-radius: 4em;
     margin: 40px 0px 30px 20px;
     align-content: left;}
+    img:hover {opacity: 0.85;}
 
     #f {display: flex;}
 
@@ -53,7 +56,8 @@
         color: black;
         background-color: cornflowerblue;
         border-radius: 2em;
-        padding: 10px;}
+        padding: 10px;
+        }
 
     .h:hover {
         background-color: rgb(206, 206, 212);}
@@ -64,7 +68,7 @@
     .k {margin-top: 100px;
     display: grid;}
 
-    .imgg {width: 200px;
+    #imgg {width: 200px;
     height: 200px;}
 
     li {line-height: 20px;
@@ -97,7 +101,7 @@
     border-radius: 0.7em;}
     button:hover {background-color: rgb(52, 163, 233);}
 
-    .send {  margin-bottom: 30px;}
+    .send {margin: 210px 0px 20px -60%; }
 
     .hr { height: 5px;
     background-color:  rgb(28, 127, 184);}
@@ -128,10 +132,12 @@
         background-repeat: no-repeat;
        }
     
-    #navbar { background-color: rgb(28, 127, 184);}
+    #navbar { background-color: rgb(28, 127, 184);
+        margin: -10px;}
 
     footer { background-color: rgb(28, 127, 184);
-    text-align: right;}
+    text-align: right;
+    margin: -10px;}
       
     .e { text-decoration: none;
         margin: 30px 15px;
@@ -147,7 +153,8 @@
     .c { margin-top: 15px;
     float: right;}
     
-    .d { float: left;}
+    .d { float: left;
+        margin-left: 15px;}
     
     .a {
         font-size: 30px;
@@ -157,7 +164,7 @@
     
     hr {width: 100%;}
     
-    img {transform: rotate(270deg);
+    .img {transform: rotate(270deg);
     width: 38%;
     height: 300px;
     border-radius: 4em;
@@ -186,7 +193,7 @@
     .k {margin-top: 100px;
     display: grid;}
 
-    .imgg {width: 200px;
+    #imgg {width: 200px;
         height: 200px;}
 
         li {line-height: 15px;
@@ -220,7 +227,7 @@
     border-radius: 0.7em;}
     button:hover {background-color: rgb(52, 163, 233);}
 
-    .send {  margin-bottom: 30px;}
+    .send { margin: 210px 0px 20px -60%;}
 
     .hr { height: 5px;
     background-color:  rgb(28, 127, 184);}
@@ -243,7 +250,7 @@
 }
 
 
-@media screen and (max-width: 621px){
+@media screen and (max-width: 591px){
     body {
         background-image: url(http://phillyshopandearncard.com/wp-content/uploads/2018/08/free-abstract-background-11-vector-1920x1080.jpg);
         font-family: 'Times New Roman', Times, serif;
@@ -251,10 +258,12 @@
         background-repeat: no-repeat;
        }
     
-    #navbar { background-color: rgb(28, 127, 184);}
+    #navbar { background-color: rgb(28, 127, 184);
+        margin: -10px;}
 
     footer { background-color: rgb(28, 127, 184);
-    text-align: right;}
+    text-align: right;
+    margin: -10px;}
       
     .e { text-decoration: none;
         margin: 30px 15px;
@@ -270,7 +279,8 @@
     .c { margin-top: 15px;
     float: right;}
     
-    .d { float: left;}
+    .d { float: left;
+        margin-left: 15px;}
     
     .a {
         font-size: 30px;
@@ -280,12 +290,12 @@
     
     hr {width: 100%;}
     
-    img {transform: rotate(270deg);
+    .img {transform: rotate(270deg);
     width: 80%;
     height: 400px;
     border-radius: 3em;
     margin: auto;
-    margin-top: 20px;}  
+    margin-top: 30px;}  
 
     #f {display: grid;}
 
@@ -310,7 +320,7 @@
     display: grid;
     text-align: center;}
 
-    .imgg {width: 200px;
+    #imgg {width: 200px;
         height: 200px;}
 
     li {line-height: 15px;
@@ -343,7 +353,8 @@
     border-radius: 0.7em;}
     button:hover {background-color: rgb(52, 163, 233);}
 
-    .send {  margin-bottom: 30px;}
+    .send { margin: 25px 0px 20px 20px;
+    width: 30%}
 
     .hr { height: 5px;
     background-color:  rgb(28, 127, 184);}

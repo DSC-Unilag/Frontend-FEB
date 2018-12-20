@@ -6,19 +6,23 @@
     <title>DSC</title>
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <link rel="stylesheet" type="text/css" media="screen" href="css/portfolio.css">
-    <script src="portfolio.js"></script>
+    <link rel="icon" href="images/1531297535388.jpg" sizes="16x16" type="image/png">
+    <script src="js/portfolio.js"></script>
+
 </head>
 
-<body>
+<body onload="greeting()">
 
 <nav id="navbar">
     <div class="d">
         <h1 class="a">Abdulafiz Musa</h1>
         <p class="b">Microbiologist . Writer . Front-end Developer</p>
     </div>
-        
+    
+    <img onclick="menuHide()" ondblclick="menuShow()" src="images/iconfinder_menu-alt_134216.svg" alt="" style="width: 20px; height:20px; background-color: rgb(125, 173, 216); border-radius: 0.2em; margin: 15px 0px 15px 30px;"> 
+
     <div class="c">
-        <a class="e" href="#"> HOME </a></li>
+        <a class="e" href="#"> HOME </a>
         <a class="e" href="aboutme.html"> ABOUT ME </a>
         <a class="e" href="contactme.html"> CONTACT ME </a>
     </div>
@@ -27,17 +31,19 @@
 </nav>
 
 <section id="f">
-        <img src="images/1531297535388.jpg" alt="myself">
+    <img class="img" onclick="knowMe()"  src="images/1531297535388.jpg" alt="myself">
  <div class="j">
         <h2>Hello there!</h2>
         <p>I am a Microbiologist, Freelance Writer and a Front-end Developer.</p>
         <p>To read more about me <a class="i" href="aboutme.html">...Click here</a></p>
-        <p class="k"> 
-           <a class="h" href="https://web.facebook.com/musa.abdulafiz.9"><strong>facebook</strong></a>
-            <a class="h" href="https://twitter.com/Abdulafiz98"><strong>twitter</strong></a>
-            <a class="h" href="https://codepen.io/a-condor/"><strong>codepen</strong></a>
-            <a class="h" href="https://github.com/a-condor"><strong>Git Hub</strong></a> 
-        </p>    
+        
+        <div class="k"> 
+            <p><strong id="pages" onmouseover="pages()" onmouseout="page()"> My Pages...</strong></p>
+            <p><a class="h" onmouseout="page()" onmouseover="facebook()" href="https://web.facebook.com/musa.abdulafiz.9"><strong>facebook</strong></a></p>
+            <p><a class="h" onmouseout="page()" onmouseover="twitter()" href="https://twitter.com/Abdulafiz98"><strong>twitter</strong></a></p>
+            <p><a class="h" onmouseout="page()" onmouseover="codepen()" href="https://codepen.io/a-condor/"><strong>codepen</strong></a></p>
+            <p> <a class="h" onmouseout="page()" onmouseover="gitHub()" href="https://github.com/a-condor"><strong>Git Hub</strong></a> </p>
+        </div>    
         
 </div>
 </section>

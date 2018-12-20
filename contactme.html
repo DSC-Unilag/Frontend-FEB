@@ -6,7 +6,8 @@
     <title>Contact me</title>
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <link rel="stylesheet" type="text/css" media="screen" href="css/portfolio.css">
-    <script src="portfolio.js"></script>
+    <link rel="icon" href="images/1531297535388.jpg" sizes="16x16" type="image/png">
+    <script src="js/portfolio.js"></script>
 </head>
 
 <body>
@@ -17,7 +18,9 @@
      <h1 class="a">Abdulafiz Musa</h1>
      <p class="b">Microbiologist . Writer . Front-end Developer</p>
 </div>
-                    
+
+   <img onclick="menuHide()" ondblclick="menuShow()"  src="images/iconfinder_menu-alt_134216.svg" alt="" style="width: 20px; height:20px; background-color: rgb(125, 173, 216); border-radius: 0.2em; margin: 15px 0px 15px 30px;" >   
+
  <div class="c">
       <a class="e" href="portfolio.html"> HOME </a></li>
      <a class="e" href="aboutme.html"> ABOUT ME </a>
@@ -36,23 +39,23 @@
         <div class="input">
             <div>
                 <p class="contact">Full Name</p>
-                <input class="name" type="text" placeholder="Enter your full name">
+                <input class="name" type="text" maxlength = "30" placeholder="Enter your full name" onkeydown="return alphabets(event)" required>
             </div>    
             <div>
                 <p class="contact">Email Address</p>
-                <input class="email" type="text" placeholder="Enter your email address">
+                <input class="email" type="email" maxlength = "30" placeholder="Enter your email address" required>
             </div>
          </div>
 
         <div class="contactm"> 
                 <p class="contact">Message</p>
-                <textarea class="message" type="text" placeholder="Write your message..."></textarea>
-        </div> 
+                <textarea class="message" type="text" maxlength = "150" placeholder="Write your message..." required></textarea>
+        </div>
+        
+         <button class="send" onclick="submitMe()">Send Message</button>  
+     
     </form>
 
-    <div class="send">
-         <button>Send Message</button>  
-    </div>
    
 </div>
 
@@ -79,7 +82,6 @@
                 <td>Hi Musa, I would love to make a web design, how can we meet?</td>
                 <td>
                     <button>Reply</button>
-                    <button>Delete</button>
                 </td>
             </tr>
             <tr>
@@ -88,7 +90,6 @@
                 <td>Hello, I need a website for my latest single. Send me a mail asap.</td>
                 <td>
                      <button>Reply</button>
-                    <button>Delete</button>
                 </td>
             </tr>
     </table>
