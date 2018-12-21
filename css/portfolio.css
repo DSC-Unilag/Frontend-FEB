@@ -102,6 +102,7 @@
     button:hover {background-color: rgb(52, 163, 233);}
 
     .send {margin: 210px 0px 20px -60%; }
+    .reset {margin: 210px 0px 20px 1%; }
 
     .hr { height: 5px;
     background-color:  rgb(28, 127, 184);}
@@ -228,6 +229,7 @@
     button:hover {background-color: rgb(52, 163, 233);}
 
     .send { margin: 210px 0px 20px -60%;}
+    .reset {margin: 210px 0px 20px 1%; }
 
     .hr { height: 5px;
     background-color:  rgb(28, 127, 184);}
@@ -353,8 +355,10 @@
     border-radius: 0.7em;}
     button:hover {background-color: rgb(52, 163, 233);}
 
-    .send { margin: 25px 0px 20px 20px;
+    .send { margin: 25px 0px 5px 20px;
     width: 30%}
+    .reset {margin: 5px 0px 40px 20px;
+        width: 30%}
 
     .hr { height: 5px;
     background-color:  rgb(28, 127, 184);}
