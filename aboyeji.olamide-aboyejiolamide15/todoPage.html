@@ -10,33 +10,35 @@
     <link href="https://fonts.googleapis.com/css?family=Open+Sans:800i|Sonsie+One" rel="stylesheet">
 </head>
 <body>
+    <!-- Header bar -->
     <div class="top-bar" >
         <div class="container">
             <h1 class="brand">Schema!</h1>
         </div>
     </div>
+    <!-- Category NavBar -->
     <div class="sidenav">
         <div class="navButton" id="allNav">All Todos</div>
         <div class="navButton" id="personalNav">Personal</div>
         <div class="navButton" id="homeNav">Home</div>
         <div class="navButton" id="workNav">Work</div>
-        <a href="index.html" class="navButton" style="color:red">LogOut</a>
+        <a href="index.html" id="logout" class="navButton" style="color:red">LogOut</a>
     </div>
     <div class="todos">
         <div style="position : relative;" id="all" class="todo-group"> 
             <div class="todoCategoryHeader"> all todos</div>
-            <div class="newTodo">Add <button class="newTodoButton"> &#43; </button></div>
+            <div class="newTodo">Add <button class="newTodoButton"> &#43; </button></div><!--'Add Todo'Button-->
             <div style="margin-right:auto; margin-left:auto; width:80%">
-                <ul id="TodosList">
+                <ul id="TodosList"><!--Todos List-->
                 </ul>
             </div>
+            <!-- Pop up form to add new todo -->
             <div class="newTodoBlock">
                 <div style="margin-bottom: 10px">
                     <h4 style="text-align:center; display: inline">Add New Todo</h4>
                     <h2 id="closeButton" style="display:inline; position: absolute; right:0; top:0; color:sienna">X</h2>
                 </div>
-                
-                <form action="">
+                <form>
                     <div style="margin-bottom:30px" >
                         <label for="todoText">ToDo:</label>
                         <input name="todoText" required style="width:50%" id="todoText" type="text">
@@ -51,7 +53,10 @@
                     </div>
                     <div style="margin-bottom:30px">
                         <label for="todoDeadline">Deadline:</label>
-                        <span id="todoDeadline"><input required type="date"><input required type="time"></span>
+                        <span id="todoDeadline">
+                            <input placeholder="dd/mm/yyyy" required type="date">
+                            <input placeholder="--:--"  required type="time">
+                        </span>
                     </div>
                     <div>
                         <button type="submit">Add ToDo</button>

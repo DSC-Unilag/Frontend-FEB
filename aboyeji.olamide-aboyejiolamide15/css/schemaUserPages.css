@@ -42,17 +42,11 @@
 	margin-right: 5px;
 	color : black;
 	font-size: 30px;
-	/* height: 5%; */
 }
 .newTodoButton{
 	border-radius: 50%; 
 	transform: translateY(-5px); 
 	background-color: sienna;
-	/* display: inline;  */
-	/* padding: 1px; */
-	/* position: absolute; */
-	/* right: 20px; */
-	/* bottom: 10px; */
 	font-weight: bolder ; 
 	
 }
@@ -61,7 +55,6 @@
 	height:100%; 
 	width:0; 
 	background-color: white; 
-	/* float:right; */
 	top : 0;
 	right : 0;
 	position: absolute;
@@ -73,7 +66,6 @@
 	padding: 15px;
 	width:70%; 
 	background-color: white; 
-	/* float:right; */
 	transition: 0.5s linear;
 }
 #closeButton:hover, .newTodoButton:hover{
@@ -92,7 +84,14 @@
 	font-weight: 900px;
 	padding: 5px 15px;
 }
-.delete:hover{
+.complete{
+	float: right;
+	color: green;
+	font-size: 25px;
+	font-weight: 900px;
+	padding: 5px 15px;
+}
+.delete:hover, .complete:hover{
 	cursor: pointer;
 }
 @media screen and (max-width : 768px) {
@@ -122,29 +121,22 @@
 		padding: 14px 8px;
 	}
 }
-/* @media screen and (max-width: 386px){
-	.hide{
-		display: none;
-	}
-} */
 li{
 	padding: 20px;
+	border-bottom : 2px solid sienna;
 }
-/* li:nth-of-type(2n){
-	background-color: #bbc8d4;
-} */
+li:first-of-type{
+	border-top : 2px solid sienna;
+}
 li:hover{
-	background-color: #999999;
+	background-color: darkkhaki;
 }
 li[class=personalcolor]{
 	background-color: aliceblue ;
 }
 li[class=homecolor]{
-	background-color: darkgray ;
+	background-color: sandybrown;
 }
 li[class=workcolor]{
 	background-color: wheat ;
-}
-.hide{
-	display: none;
 }
