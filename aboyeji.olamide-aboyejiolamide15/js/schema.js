@@ -29,12 +29,12 @@ function addTodo(){
     newTodoBlock.classList.add("newTodoBlockActive");
     button.style.display = "none";
 }
-//Confirm if user want to Log out
+//Confirm if user wants to Log out
 logout.addEventListener("click", function(e){
     if(!(confirm("Are you sure you want to Logout?"))){
         e.preventDefault();
     }
-})
+});
 //What to do when todo form is submitted
 function formSubmit(e){
      e.preventDefault();
@@ -59,7 +59,7 @@ function formSubmit(e){
             newTodo.classList.add("workcolor");
         }
         //Append the new list(li) element into its parent Element(ul) already on the page
-        TodosList.appendChild(newTodo);  
+        TodosList.appendChild(newTodo); 
         //Clear form values
         todoText.value = "", todoDeadlineDate.value = "", todoDeadlineTime.value = ""; 
     }
