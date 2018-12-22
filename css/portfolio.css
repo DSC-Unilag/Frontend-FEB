@@ -1,0 +1,382 @@
+@media screen and (min-width: 961px){
+    body {
+        background-image: url(http://phillyshopandearncard.com/wp-content/uploads/2018/08/free-abstract-background-11-vector-1920x1080.jpg);
+        font-family: 'Times New Roman', Times, serif;
+        background-size: cover;
+        background-repeat: no-repeat;}
+
+    #navbar { background-color: rgb(28, 127, 184);
+    margin: -10px;}
+
+    footer { background-color: rgb(28, 127, 184);
+    text-align: right;
+    margin: -10px;}
+    
+    .e { text-decoration: none;
+        margin: 30px 15px;
+        font-size: 14px;
+        color: black;
+        background-color: cornflowerblue;
+        border-radius: 0.5em;
+        line-height: 28px;
+        padding: 5px;}
+    .e:hover {background-color: rgb(206, 206, 212);}
+
+    .c { margin-top: 15px;
+    float: right;}
+
+    .d { float: left;
+    margin-left: 15px;}
+
+    .a {
+        font-size: 30px;
+        line-height: 2px;}
+    .b { font-size: 15px;
+        line-height: 2px;}
+
+    hr {width: 100%;}
+
+    .img {transform: rotate(270deg);
+    width: 40%;
+    height: 600px;
+    border-radius: 4em;
+    margin: 40px 0px 30px 20px;
+    align-content: left;}
+    img:hover {opacity: 0.85;}
+
+    #f {display: flex;}
+
+    .j {width: 40%;
+    float: right;
+    margin: 50px 0px 0px 140px;}
+
+    .h {text-decoration: none;
+        margin: 10px 10px;
+        font-size: 16px;
+        color: black;
+        background-color: cornflowerblue;
+        border-radius: 2em;
+        padding: 10px;
+        }
+
+    .h:hover {
+        background-color: rgb(206, 206, 212);}
+
+    .i { text-decoration: none; }
+    .i:hover{ color: black }
+
+    .k {margin-top: 100px;
+    display: grid;}
+
+    #imgg {width: 200px;
+    height: 200px;}
+
+    li {line-height: 20px;
+        margin: auto;
+        font-size: 20px;}
+
+    h4 { font-size: 20px;}
+
+    .contact {font-size: 20px;}
+
+    .name, .email, .message {
+        width: 80%;
+        height: 25px;
+        border-radius: 0.5em; }
+
+    .message {height: 100px;
+    padding: 10px;
+    border-color: rgb(92, 92, 94);}
+
+   .input {width: 40%;
+    align-content: left;}
+   .contactm {width: 40%;
+    align-content: right;}
+
+    .form {display: flex;}
+
+    button {margin-top: 25px; 
+    height: 30px;
+    background-color: rgb(28, 127, 184);
+    border-radius: 0.7em;}
+    button:hover {background-color: rgb(52, 163, 233);}
+
+    .send {margin: 210px 0px 20px -60%; }
+    .reset {margin: 210px 0px 20px 1%; }
+
+    .hr { height: 5px;
+    background-color:  rgb(28, 127, 184);}
+
+    .search {width: 15%;
+        height: 25px;
+        border-radius: 0.5em;}
+
+    .h4 {margin-bottom: 5px;}
+
+    table {background-color: rgb(52, 163, 233);
+    margin-top: 30px;
+    margin-bottom: 50px;
+    border-radius: 0.5em;
+    padding: 5px;}
+
+    th, td {background-color: rgb(227, 232, 236);
+    padding: 7px;
+    border-radius: 0.2em;}
+}
+
+
+@media screen and (max-width: 960px){
+    body {
+        background-image: url(http://phillyshopandearncard.com/wp-content/uploads/2018/08/free-abstract-background-11-vector-1920x1080.jpg);
+        font-family: 'Times New Roman', Times, serif;
+        background-size: cover;
+        background-repeat: no-repeat;
+       }
+    
+    #navbar { background-color: rgb(28, 127, 184);
+        margin: -10px;}
+
+    footer { background-color: rgb(28, 127, 184);
+    text-align: right;
+    margin: -10px;}
+      
+    .e { text-decoration: none;
+        margin: 30px 15px;
+        font-size: 14px;
+        color: black;
+        background-color: cornflowerblue;
+        border-radius: 0.5em;
+        line-height: 28px;
+        padding: 5px;}
+    .e:hover {
+        background-color: rgb(206, 206, 212);}
+    
+    .c { margin-top: 15px;
+    float: right;}
+    
+    .d { float: left;
+        margin-left: 15px;}
+    
+    .a {
+        font-size: 30px;
+        line-height: 2px;}
+    .b { font-size: 15px;
+        line-height: 2px;}
+    
+    hr {width: 100%;}
+    
+    .img {transform: rotate(270deg);
+    width: 38%;
+    height: 300px;
+    border-radius: 4em;
+    margin: 50px 0px 60px 0px;}  
+
+    #f {display: flex;}
+
+    .j {width: 40%;
+    float: right;
+    margin: 50px 0px 0px 120px;}
+
+    .h {text-decoration: none;
+        margin: 10px 10px;
+        font-size: 16px;
+        color: black;
+        background-color: cornflowerblue;
+        border-radius: 2em;
+        padding: 10px;}
+
+    .h:hover {
+        background-color: rgb(206, 206, 212);}
+
+    .i { text-decoration: none; }
+    .i:hover{ color: black }
+
+    .k {margin-top: 100px;
+    display: grid;}
+
+    #imgg {width: 200px;
+        height: 200px;}
+
+        li {line-height: 15px;
+            margin: auto;
+         font-size: 16px;}
+
+    h4 { font-size: 20px;}
+
+    .contact {font-size: 20px;}
+
+    .name, .email, .message {
+        width: 90%;
+        height: 25px;
+        border-radius: 0.5em; }
+
+    .message {height: 100px;
+        width: 120%;
+    padding: 10px;
+    border-color: rgb(92, 92, 94);}
+
+   .input {width: 40%;
+    align-content: left;}
+   .contactm {width: 40%;
+    align-content: right;}
+
+    .form {display: flex;}
+
+    button {margin-top: 25px; 
+    height: 30px;
+    background-color: rgb(28, 127, 184);
+    border-radius: 0.7em;}
+    button:hover {background-color: rgb(52, 163, 233);}
+
+    .send { margin: 210px 0px 20px -60%;}
+    .reset {margin: 210px 0px 20px 1%; }
+
+    .hr { height: 5px;
+    background-color:  rgb(28, 127, 184);}
+
+    .search {width: 20%;
+        height: 25px;
+        border-radius: 0.5em;}
+
+    .h4 {margin-bottom: 5px;}
+
+    table {background-color: rgb(52, 163, 233);
+    margin-top: 30px;
+    margin-bottom: 50px;
+    border-radius: 0.5em;
+    padding: 5px;}
+
+    th, td {background-color: rgb(227, 232, 236);
+    padding: 7px;
+    border-radius: 0.2em;}
+}
+
+
+@media screen and (max-width: 591px){
+    body {
+        background-image: url(http://phillyshopandearncard.com/wp-content/uploads/2018/08/free-abstract-background-11-vector-1920x1080.jpg);
+        font-family: 'Times New Roman', Times, serif;
+        background-size: cover;
+        background-repeat: no-repeat;
+       }
+    
+    #navbar { background-color: rgb(28, 127, 184);
+        margin: -10px;}
+
+    footer { background-color: rgb(28, 127, 184);
+    text-align: right;
+    margin: -10px;}
+      
+    .e { text-decoration: none;
+        margin: 30px 15px;
+        font-size: 14px;
+        color: black;
+        background-color: cornflowerblue;
+        border-radius: 0.5em;
+        line-height: 28px;
+        padding: 5px;}
+    .e:hover {
+        background-color: rgb(206, 206, 212);}
+    
+    .c { margin-top: 15px;
+    float: right;}
+    
+    .d { float: left;
+        margin-left: 15px;}
+    
+    .a {
+        font-size: 30px;
+        line-height: 2px;}
+    .b { font-size: 15px;
+        line-height: 2px;}
+    
+    hr {width: 100%;}
+    
+    .img {transform: rotate(270deg);
+    width: 80%;
+    height: 400px;
+    border-radius: 3em;
+    margin: auto;
+    margin-top: 30px;}  
+
+    #f {display: grid;}
+
+    .j {width: 70%;
+    margin: 50px 100px 50px 100px;}
+
+    .h {text-decoration: none;
+        margin: 10px 10px;
+        font-size: 16px;
+        color: black;
+        background-color: cornflowerblue;
+        border-radius: 2em;
+        padding: 10px;}
+
+    .h:hover {
+        background-color: rgb(206, 206, 212);}
+
+    .i { text-decoration: none; }
+    .i:hover{ color: black }
+
+    .k {margin-top: 50px;
+    display: grid;
+    text-align: center;}
+
+    #imgg {width: 200px;
+        height: 200px;}
+
+    li {line-height: 15px;
+    margin: auto;
+      font-size: 16px;}
+
+     h4 { font-size: 20px;}
+
+    .contact {font-size: 20px;}
+
+    .name, .email, .message {
+        width: 150%;
+        height: 25px;
+        border-radius: 0.5em; }
+
+    .message {height: 100px;
+    padding: 10px;
+    border-color: rgb(92, 92, 94);}
+
+   .input {width: 40%;
+    align-content: left;}
+   .contactm {width: 40%;
+    align-content: right;}
+
+    .form {display: grid;}
+
+    button {margin-top: 25px; 
+    height: 30px;
+    background-color: rgb(28, 127, 184);
+    border-radius: 0.7em;}
+    button:hover {background-color: rgb(52, 163, 233);}
+
+    .send { margin: 25px 0px 5px 20px;
+    width: 30%}
+    .reset {margin: 5px 0px 40px 20px;
+        width: 30%}
+
+    .hr { height: 5px;
+    background-color:  rgb(28, 127, 184);}
+
+    .search {width: 30%;
+        height: 25px;
+        border-radius: 0.5em;}
+
+    .h4 {margin-bottom: 5px;}
+
+    table {background-color: rgb(52, 163, 233);
+    margin-top: 30px;
+    margin-bottom: 50px;
+    border-radius: 0.5em;
+    padding: 5px;}
+
+    th, td {background-color: rgb(227, 232, 236);
+    padding: 7px;
+    border-radius: 0.2em;}
+
+}

@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>Contact me</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" type="text/css" media="screen" href="css/portfolio.css">
+    <link rel="icon" href="images/1531297535388.jpg" sizes="16x16" type="image/png">
+    <script src="js/portfolio.js"></script>
+</head>
+
+<body>
+
+
+<nav id="navbar">
+<div class="d">
+     <h1 class="a">Abdulafiz Musa</h1>
+     <p class="b">Microbiologist . Writer . Front-end Developer</p>
+</div>
+
+   <img onclick="menuHide()" ondblclick="menuShow()"  src="images/iconfinder_menu-alt_134216.svg" alt="" style="width: 20px; height:20px; background-color: rgb(125, 173, 216); border-radius: 0.2em; margin: 15px 0px 15px 30px;" >   
+
+ <div class="c">
+      <a class="e" href="portfolio.html"> HOME </a></li>
+     <a class="e" href="aboutme.html"> ABOUT ME </a>
+     <a class="e" href="#"> CONTACT ME </a>
+</div>
+
+ <hr>
+</nav>
+
+
+<div>
+    <h4>Interested in Working with me?</h4>
+
+    <form class="form">
+
+        <div class="input">
+            <div>
+                <p class="contact">Full Name</p>
+                <input class="name" type="text" maxlength = "30" placeholder="Enter your full name" onkeydown="return alphabets(event)" required>
+            </div>    
+            <div>
+                <p class="contact">Email Address</p>
+                <input class="email" type="email" maxlength = "30" placeholder="Enter your email address" required>
+            </div>
+         </div>
+
+        <div class="contactm"> 
+                <p class="contact">Message</p>
+                <textarea class="message" type="text" maxlength = "150" placeholder="Write your message..." required></textarea>
+        </div>
+        
+         <button  type="button" class="send" onclick="submitMe()">Send Message</button>  
+         <button class="reset" onclick="reset()" >Reset</button>
+     
+    </form>
+
+   
+</div>
+
+<hr class="hr">
+
+
+<section>
+<div class="request">
+    <h4 class="h4">REQUESTS</h4>
+</div>
+
+<div >
+    <table>
+            <tr>
+                <th>Full Name</th>  
+                <th>Email Address</th>
+                <th>Message</th>
+            </tr>
+           <!-- <tr>
+                <td>Adeniran Opeyemi</td>
+                <td>adeniran1059@gmail.com</td>
+                <td>Hi Musa, I would love to make a web design, how can we meet?</td>
+            </tr>
+            <tr>
+                <td>Adekunle Gold</td>
+                <td>a.gold@gmail.com</td>
+                <td>Hello, I need a website for my latest single. Send me a mail asap.</td>
+            </tr>-->
+    </table>
+    
+</div>
+   
+</section>
+
+
+<footer>
+        <hr>
+     <strong>© 2018 -  Abdulafiz Musa. All Rights Reserved</strong>
+</footer>
+
+</body>
+
+</html>
