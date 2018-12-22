@@ -1,0 +1,88 @@
+<!doctype <!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>Contact me</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" type="text/css" media="screen" href="homepage.css"/>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <script src="js/submit_javascript.js"></script>
+    <script src="js/reset_form.js"></script>
+
+    </head>
+    <body>
+        <div>
+            <header>
+                <h3><span id="sal">S a l</span> o m e</h3>
+                <label for="toggle-1" class="toggle-menu">
+                    <ul>
+                        <li></li>
+                        <li></li>
+                        <li></li>
+                    </ul>
+                </label>
+                <input type="checkbox" id="toggle-1" />
+                <nav>
+                    <ul>
+                        <li><a  href="homepage.html">Homepage</a></li>
+                        <li><a href="#about-me">About me</a></li>          
+                        <li><a class="active" href="contact.html">Contact</a></li>
+                    </ul>
+                </nav>
+                <div class="clearfix">
+            </header>
+            <div class="title">
+                <div class="title-head">
+                    <h3>For Your Beautiful Web Designs,Contact Me by Filling This?</h3>
+                </div>
+                <form action="thanks.html" method="post" name="form_name" id="form_id" class="form_class">
+                    <div class="form">
+                        <div class="Ftext" >
+                            <label>Name :-</label>
+                            <br/>
+                            <input type="text" name="name" id="name" class="line" placeholder="Name" />
+                            <br/>
+                            <br>
+                            <label>Email :-</label>
+                            <br>
+                            <input type="text" name="email" id="email" class="line" placeholder="Valid Email" />
+                            <br/>
+                            <br>
+                            <label>Phone number :-</label> 
+                            <br>
+                            <input type="" class="line" name="phone-number" class="line" placeholder="+234 0000 0000" required >
+                        </div>
+                        <div class="text">
+                            Message :- <br><br>
+                            <textarea name="text" id="" cols="60" rows="10"></textarea><br><br>
+                        </div>
+                    </div>
+                    <!--phonenumber and social connect -->
+                    <div class="submit">
+                        <br>
+                        <input type="button" name="submit_id" id="btn_id" value="Submit" onclick="submit_by_id()" />
+                        <input type="button" id="btn_id" align="middle" onclick="resetform()" value="Reset Form"/>
+                    </div>
+                </form>
+            </div>    
+            <div class="Cfooter">
+                &copy; 2018. SALOME OLUWALOLOPE ALL RIGHTS RESERVED
+                <div class="social">
+                    <a href="https://github.com/theimy">
+                    <i class="fa fa-github"></i>
+                    </a>
+                    <a href="https://www.linkedin.com/in/salome-oluwalolope">
+                        <i class="fa fa-linkedin"></i>
+                    </a>
+                    <a href="facebook.com/peace.temmy.9">
+                        <i class="fa fa-facebook"></i>
+                    </a>
+                    <a href="https://twitter.com/theimy_dayo">
+                        <i class="fa fa-Twitter"></i>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </body>
+</html>
