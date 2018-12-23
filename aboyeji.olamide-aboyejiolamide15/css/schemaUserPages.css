@@ -28,7 +28,7 @@
 .sidenav .navButton{
 	text-decoration: none;
 	color: sienna;
-	 display: block;
+	display: block;
     padding: 1em 1em;
     text-align: center; 
 }
@@ -51,7 +51,6 @@
 	
 }
 .newTodoBlock{
-	box-sizing: border-box; 
 	height:100%; 
 	width:0; 
 	background-color: white; 
@@ -61,11 +60,8 @@
 	
 }
 .newTodoBlockActive{
-	box-sizing: border-box; 
-	height:100%; 
-	padding: 15px;
+	padding-left: 15px; 
 	width:70%; 
-	background-color: white; 
 	transition: 0.5s linear;
 }
 #closeButton:hover, .newTodoButton:hover{
@@ -81,14 +77,14 @@
 	float: right;
 	color: red;
 	font-size: 25px;
-	font-weight: 900px;
+	font-weight: 900;
 	padding: 5px 15px;
 }
 .complete{
 	float: right;
 	color: green;
 	font-size: 25px;
-	font-weight: 900px;
+	font-weight: 900;
 	padding: 5px 15px;
 }
 .delete:hover, .complete:hover{
