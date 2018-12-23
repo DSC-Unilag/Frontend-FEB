@@ -1,1 +1,28 @@
-
+*{
+  margin:0;
+  background-color: #333333;
+}
+nav{
+  background-color:;
+  font-family: 'Dancing Script', cursive;
+}
+nav ul{
+  list-style-type: none;
+  margin: 0;
+  padding:15px;
+  background-color: #333333;
+  text-align: right;
+}
+nav li{
+  display: inline-block;
+  padding-left:23px;
+  padding-right: 50px;
+  margin-left: 15px;
+}
+nav li :hover{
+  color:brown;
+}
+nav li a{
+  color: orange;
+  text-decoration: none;
+}
