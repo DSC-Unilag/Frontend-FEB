@@ -6,11 +6,13 @@
 		<title>Contact</title>
 		<link rel="stylesheet" type="text/css" href="css/main.css" />
 		<link rel="stylesheet" type="text/css" href="css/grid.css" />
+		<link rel="stylesheet" type="text/css" href="css/animation.css" />
 		<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+		<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Ubuntu|Yatra+One|Monoton|Ubuntu+Mono">
 	</head>
 	<body>
 	<div class="wrapper">
-		
+		<a class="totop" href="#top"><i class="fa fa-arrow-up"></i> </a>
 		<div class="nav-container"> <!-- Navigation -->
 			<div class="row">
 				<div class="col-s-12 container">
@@ -29,7 +31,6 @@
 						<ul class="nav-menu">
 							<li><a href="index.html"> Home </a></li>
 							<li><a href="about.html"> About </a></li>
-							<li><a href="services.html"> Service </a></li>
 							<li><a href="portfolio.html"> Portfolio </a></li>
 							<li><a class="active" href="contact.html"> Contact </a></li>
 						</ul>
@@ -43,34 +44,34 @@
 			</div>
 		</header>
 		<section class="content"> <!-- Content -->
-			<div class="row px-5">
-			<div class="col-s-7 col-7 container">
-				<code>
-					if (uWannaWorkWithMe) { <br>
-						&nbsp; &nbsp; return "SEND ME A MESSAGE" <br>
-					}
+			<div class="row p-5">
+			<div class="col-s-8 col-8">
+				<code>if (uWannaWorkWithMe) { <br>
+						&nbsp; &nbsp; &nbsp; return "SEND ME A MESSAGE" <br>
+					&nbsp; &nbsp; }
 				</code>
-				<form class="contact-form form" method="post">
-					<div class="form-group">
-						<!-- <label>Message: </label> -->
-						<textarea placeholder="Your Message" class="form-control" rows="5" type="textarea"></textarea>
-					</div>
+				<form id="contactForm" class="contact-form form" method="post">
 					<div class="row">
-					<div class="form-group col-s-6">
-						<!-- <label>Name: </label> -->
-						<input placeholder="Your Name" class="form-control" type="text">
-					</div>
-					<div class="form-group col-s-6">
-						<!-- <label>Email: </label> -->
-						<input placeholder="Your Email" class="form-control" type="email">
-					</div>
-					</div>
-					<div class="form-group col-s-12">
-						<button class="btn col-s-12"" name="submit">Submit</button>
+						<div class="form-group">
+							<!-- <label>Message: </label> -->
+							<textarea id="message" placeholder="Your Message" value="" class="form-control" rows="5" type="textarea"></textarea>
+						</div>
+						<div class="form-group col-s-6">
+							<!-- <label>Name: </label> -->
+							<input id="name" placeholder="Your Name" value="" class="form-control" type="text" autocomplete='name'>
+						</div>
+						<div class="form-group col-s-6">
+							<!-- <label>Email: </label> -->
+							<input id="email" placeholder="Your Email" value="" class="form-control" type="email" autocomplete='email'>
+						</div>
+						<div class="form-group col-s-12">
+							<button class="btn col-s-6" type="submit">Submit</button>
+							<span class="btn col-s-6" onclick="formReset()">Reset</span>
+						</div>
 					</div>
 				</form>
 			</div>
-			<div class="col-s-5 col-5">
+			<div class="col-s-4 pt-5 pb-5 pl-5 col-4">
 				<h4>You can find me at</h4>
 				<p>Address line 1 <br>
 					Address line 2 <br> 
@@ -85,7 +86,7 @@
 			</div>
 			</div>
 			
-			<div class="row px-5"><div class="col-s-12"><table class="table">
+			<div class="row px-5"><div class="col-s-12"><table class="table anim slideInUp">
 				<thead>
 					<tr>
 						<th>Full Name</th>
@@ -94,25 +95,8 @@
 						<th>Action</th>
 					</tr>
 				</thead>
-				<tbody>
-					<tr>
-						<td>John Doe</td>
-						<td>johndoe@email.com</td>
-						<td>I'd love to meet with you in person</td>
-						<td>
-							<a class="" href="#">Edit</a>
-							<a class="" href="#">Delete</a>
-						</td>
-					</tr>
-					<tr>
-						<td>John Doe</td>
-						<td>johndoe@email.com</td>
-						<td>I'd love to meet with you in person</td>
-						<td>
-							<a class="" href="#">Edit</a>
-							<a class="" href="#">Delete</a>
-						</td>
-					</tr>
+				<tbody id="contactFormEntry">
+					
 				</tbody>
 			</table></div></div>
 	
@@ -120,11 +104,12 @@
 
 		<footer class="foot"> <!-- Footer -->
 
-			<p>&copy; 2018  <span>Made with <i class="fa fa-heart"></i> by <a href="#">shewritescode</a></span></p>
+			<p>&copy; <span id="year"></span>  <span>Made with <i class="fa fa-heart"></i> by <a href="#">shewritescode</a></span></p>
 
 		</footer> <!--/ Footer -->
 
 	</div>
 	<script src="js/main.js"></script>
+	<script src="js/contact.js"></script>
 	</body>
 </html>
