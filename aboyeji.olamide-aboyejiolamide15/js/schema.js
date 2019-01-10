@@ -1,55 +1,63 @@
 //Declare variables
-var button = document.querySelector("button");
-var closeButton = document.getElementById("closeButton");
-var newTodoBlock = document.getElementsByClassName("newTodoBlock")[0];
-var todoText = document.getElementById("todoText");
-var form = document.querySelector("form");
-var categorySelected = document.getElementById("todoCategory");
-var categoryHeader = document.getElementsByClassName("todoCategoryHeader")[0];
-var all = document.getElementById("allNav");
-var personal = document.getElementById("personalNav");
-var work = document.getElementById("workNav");
-var home = document.getElementById("homeNav");
-var TodosList = document.getElementById("TodosList");
-var logout = document.getElementById("logout");
+const button = document.querySelector("button");
+const closeButton = document.getElementById("closeButton");
+const newTodoBlock = document.getElementsByClassName("newTodoBlock")[0];
+const todoText = document.getElementById("todoText");
+const form = document.querySelector("form");
+const categorySelected = document.getElementById("todoCategory");
+const categoryHeader = document.getElementsByClassName("todoCategoryHeader")[0];
+const all = document.getElementById("allNav");
+const personal = document.getElementById("personalNav");
+const work = document.getElementById("workNav");
+const home = document.getElementById("homeNav");
+const TodosList = document.getElementById("TodosList");
+const logout = document.getElementById("logout");
 //Day 12 task
-var todoDeadlineDate = document.querySelector("input[type=date]");
-var todoDeadlineTime =  document.querySelector("input[type=time]");
+const todoDeadlineDate = document.querySelector("input[type=date]");
+const todoDeadlineTime =  document.querySelector("input[type=time]");
 //
-var allDeadlines = document.getElementsByClassName("deadline");
-var todoTitle = document.getElementsByClassName("todoTitle");
+const allDeadlines = document.getElementsByClassName("deadline");
+const todoTitle = document.getElementsByClassName("todoTitle");
 //
-button.addEventListener("click", addTodo);
-form.addEventListener("submit", formSubmit);
-closeButton.addEventListener("click", function(){
+closeButton.addEventListener("click", () => {
     newTodoBlock.classList.remove("newTodoBlockActive");
     button.style.display = "initial";
 });
-function addTodo(){
+const addTodo = () => {
     newTodoBlock.classList.add("newTodoBlockActive");
     button.style.display = "none";
 }
+button.addEventListener("click", addTodo);
 //Confirm if user wants to Log out
-logout.addEventListener("click", function(e){
+logout.addEventListener("click", (e) => {
     if(!(confirm("Are you sure you want to Logout?"))){
         e.preventDefault();
     }
 });
+//Get Current Time
+const currentTime = () => {
+    const currentTime = new Date();
+    const currentTimeDigits = Date.parse(currentTime);
+    return currentTimeDigits;
+}
 //What to do when todo form is submitted
-function formSubmit(e){
+const formSubmit = (e) => {
      e.preventDefault();
-    var currentTimeDigits = currentTime();
-    var todoTime = new Date(todoDeadlineDate.value + " " + todoDeadlineTime.value);
-    var todoTimeDigits = Date.parse(todoTime);
+    const currentTimeDigits = currentTime();
+    const todoTime = new Date(todoDeadlineDate.value + " " + todoDeadlineTime.value);
+    const todoTimeDigits = Date.parse(todoTime);
     if(currentTimeDigits >= todoTimeDigits){
         //Alert Error messsage if user selected an earlier date as deadline for todo
        alert("Enter a future date");  
     }else{
         newTodoBlock.classList.remove("newTodoBlockActive");
         button.style.display = "initial";
-        var newTodo = document.createElement("li"); //Create a new list element
-        newTodo.innerHTML = "<span class='todoTitle'>"+ todoText.value +"</span>" +"<span title='Remove Todo' class='delete'>&#128465;</span><span class='complete' title='Completed'>&#10004;</span><br>" + 
-        "<span class='deadline'>" + todoDeadlineDate.value +" "+ todoDeadlineTime.value + "</span>"; //Input values from form into list element
+        const newTodo = document.createElement("li"); //Create a new list element
+        newTodo.innerHTML = `<span class='todoTitle'>${todoText.value}</span>` +
+        "<span title='Remove Todo' class='delete'>&#128465;</span>" +
+        "<span class='complete' title='Completed'>&#10004;</span><br>" +
+        `<span class='deadline'>${todoDeadlineDate.value} ${todoDeadlineTime.value}</span>`; 
+        //Input values from form into list element
         //Check category selected to determine todo background color
         if (categorySelected.value === "personal"){
             newTodo.classList.add("personalcolor");
@@ -64,46 +72,33 @@ function formSubmit(e){
         todoText.value = "", todoDeadlineDate.value = "", todoDeadlineTime.value = ""; 
     }
 }
+form.addEventListener("submit", formSubmit);
 //Ensuring only todos on a particular category are displayed when category is clicked
-personal.addEventListener("click", function(){
-    categoryHeader.innerText = "personal todos";
-    var lis = document.querySelectorAll("li");
-    for(var i = 0; i < lis.length; i++){
-        if (!(lis[i].classList.contains("personalcolor"))){
-             lis[i].style.display = "none";
-        }else{lis[i].style.display = "block";}
+const filter = (e) => {
+    const category = e.target.classList[1];
+    const lis = document.querySelectorAll("li");
+    for (let li of lis) {
+        if(li.classList.contains(`${category}color`)){
+            li.style.display = "block";
+        }else{
+            li.style.display = "none";
+        }
     }
-});
-home.addEventListener("click", function(){
-    categoryHeader.innerText = "home todos";
-    var lis = document.querySelectorAll("li");
-    for(var i = 0; i < lis.length; i++){
-        if (!(lis[i].classList.contains("homecolor"))){
-            lis[i].style.display = "none";
-        }else{lis[i].style.display = "block";}
-    }
-});
-work.addEventListener("click", function(){
-    categoryHeader.innerText = "work todos";
-    var lis = document.querySelectorAll("li");
-    for(var i = 0; i < lis.length; i++){
-        if (!(lis[i].classList.contains("workcolor"))){
-             lis[i].style.display = "none";
-        } else{lis[i].style.display = "block";}
-    }
-});
-all.addEventListener("click", function(){
+}
+personal.addEventListener("click", filter);
+home.addEventListener("click", filter); 
+work.addEventListener("click", filter); 
+all.addEventListener("click", () => {
     categoryHeader.innerText = "all todos";
-    var lis = document.querySelectorAll("li");
-    for(var i = 0; i < lis.length; i++){
-        lis[i].style.display = "block";
+    const lis = document.querySelectorAll("li");
+    for(let todo of lis){
+        todo.style.display = "block";
     }
 });
 //
 //Day15 task 
 //Deleting and Completing Todos
-TodosList.addEventListener("click", deleted);
-function deleted(e){
+const deleted = (e) => {
     if(e.target.classList.contains('delete')){
         if(confirm('Are You Sure you want to Remove this Todo?')){
             var li = e.target.parentElement;
@@ -117,17 +112,12 @@ function deleted(e){
         }
     } 
 }
-//Get Current Time
-function currentTime(){
-    var currentTime = new Date();
-    var currentTimeDigits = Date.parse(currentTime);
-    return currentTimeDigits;
-}
-function overdueAlert(){
+TodosList.addEventListener("click", deleted);
+const overdueAlert = () => {
     for(var i = 0; i < allDeadlines.length; i++){
-        var currentTimeDigits = currentTime();
-        var todoTime = new Date(allDeadlines[i].innerText);
-        var todoTimeDigits = Date.parse(todoTime);
+        const currentTimeDigits = currentTime();
+        const todoTime = new Date(allDeadlines[i].innerText);
+        const todoTimeDigits = Date.parse(todoTime);
         //Compare Todo Deadline with Current Time
         if(currentTimeDigits >= todoTimeDigits){
             //Change Todo Background Color to Red and text Color to white if Deadline has been met
@@ -135,7 +125,7 @@ function overdueAlert(){
             todoTitle[i].parentNode.style.color = "white";
             todoTitle[i].nextSibling.style.color = "white";
             //alert a message saying a particular todo is overdue
-            alert(todoTitle[i].innerText + " is overdue");
+            alert(`${todoTitle[i].innerText} is overdue`);
         }
     }
 }
