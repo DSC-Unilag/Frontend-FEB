@@ -27,6 +27,7 @@ const addTodo = () => {
     newTodoBlock.classList.add("newTodoBlockActive");
     button.style.display = "none";
 }
+
 button.addEventListener("click", addTodo);
 //Confirm if user wants to Log out
 logout.addEventListener("click", (e) => {
