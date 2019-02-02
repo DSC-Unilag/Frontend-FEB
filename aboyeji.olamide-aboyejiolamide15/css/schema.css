@@ -1,0 +1,103 @@
+ *{
+    margin: 0;
+    padding: 0;
+} 
+body{
+    background: #3a6186;  /* old browsers */
+    background: -webkit-linear-gradient(to right, #89253e, #3a6186);  
+    background: linear-gradient(to right, #89253e, #3a6186); 
+}
+h1,h2,h3{
+    font-family: 'Open Sans', sans-serif;
+    font-size: 40px ;
+}
+.container {
+    padding-right: 15px;
+    padding-left: 15px;
+    margin-right: auto;
+    margin-left: auto;
+  }
+  @media (min-width: 768px) {
+    .container {
+      width: 750px;
+    }
+  }
+  @media (min-width: 992px) {
+    .container {
+      width: 970px;
+    }
+  }
+  @media (min-width: 1200px) {
+    .container {
+      width: 1170px;
+    }
+  }
+  .top-bar{
+      background-color: antiquewhite ;
+      box-shadow: -3px -3px 1px black inset;
+      /* height : 10vh; */
+  }
+  .right{
+      float: right;
+  }
+  .brand{
+      display: inline;
+  }
+  select{
+       border-radius: 4px;
+      padding: 6px 12px;
+  }
+  input{
+    border-radius: 4px;
+    padding: 6px 12px;
+  }
+  .top-bar input{
+      margin-top: 0.5em;
+  }
+  button{
+      border-radius: 5px;
+      background-color: darkcyan;
+      color: white;
+      padding: 6px 12px;
+      border: 1px solid transparent;
+      display: inline-block;
+  }
+  .v-align{
+      padding-top: 25%;
+  }
+  .brand{
+    font-family: 'Sonsie One', cursive;
+    color: sienna;
+  }
+  .intro{
+      flex: 70%;
+  }
+  .signup{
+      flex: 30%;
+      margin-top: 10%;
+      background-color: blanchedalmond;
+      border-radius: 4px; 
+  }
+  .row { 
+    display: flex;
+    flex-wrap: wrap;
+}
+.signup form{
+    padding:5px 10px;
+}
+@media screen and (max-width:768px){
+    .right{
+        float: none;
+    }
+    .row{
+        display: unset;
+    }
+    .signup {
+        width: 80%;
+        margin-left: auto;
+        margin-right: auto;
+    }
+    .intro{
+        width: 100%;
+    }
+}

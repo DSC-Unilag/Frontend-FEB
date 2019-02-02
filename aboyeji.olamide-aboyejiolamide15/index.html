@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8" />
+		<meta http-equiv="X-UA-Compatible" content="IE=edge">
+		<title>Schema!</title>
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+		<link rel="stylesheet" type="text/css" media="screen" href="css/schema.css" />
+		<link href="https://fonts.googleapis.com/css?family=Open+Sans:800i|Sonsie+One" rel="stylesheet">
+	</head>
+	<body>
+		<!-- Header bar -->
+		<div class="top-bar" >
+			<div class="container">
+				<h1 class="brand">Schema!</h1>
+				<form class="right" action="todoPage.html" method="get"><!--Login form-->
+					<input class="username" required class="username" name="user" type="text" placeholder="Username">
+					<input required name="password" type="password" placeholder="Password">
+					<button type="submit">Login</button>
+				</form>
+			</div>
+		</div>
+		<div class="container row">
+			<div class="v-align intro">
+				<h1>Welcome to <span class="brand">Schema!</span></h1>
+				<h3>your best to-do list app...</h3>
+			</div>
+			<div class="signup right">
+				<form action="todoPage.html" method="get" ><!--Sign Up Form-->
+					<h1>Sign Up</h1>
+					<label for="full-name">Full Name:</label><br>
+					<input type="text" required id="full-name" name="fullname"><br><br>
+					<label for="email">Email Address:</label><br>
+					<input type="email"  required id="email" name="email"><br><br>
+					<label for="username">Username:</label><br>
+					<input class="username" type="text" required id="username" name="username"><br><br>
+					<label for="password">Password:</label><br>
+					<input type="password" required id="password" name="password"><br><br>
+					<button type="submit">Sign Up</button>
+				</form>
+			</div>
+		</div>
+	</body>
+</html>
