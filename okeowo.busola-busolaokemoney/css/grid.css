@@ -3,6 +3,7 @@
 [class*="col-"] {
 	width: 100%;
 	float: left;
+	padding: 0 10px
 }
 
 .row::after {

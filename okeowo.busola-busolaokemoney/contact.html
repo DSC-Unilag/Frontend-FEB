@@ -3,7 +3,7 @@
 	<head>
 		<meta charset="utf-8">
 		<meta name="viewport" content="width=device-width, initial-scale=1">
-		<title>Contact</title>
+		<title>Contact - SheWritesCode</title>
 		<link rel="stylesheet" type="text/css" href="css/main.css" />
 		<link rel="stylesheet" type="text/css" href="css/grid.css" />
 		<link rel="stylesheet" type="text/css" href="css/animation.css" />
@@ -43,50 +43,47 @@
 				<h1>Lets Talk</h1> <!-- Heading -->
 			</div>
 		</header>
-		<section class="content"> <!-- Content -->
-			<div class="row p-5">
-			<div class="col-s-8 col-8">
-				<code>if (uWannaWorkWithMe) { <br>
-						&nbsp; &nbsp; &nbsp; return "SEND ME A MESSAGE" <br>
-					&nbsp; &nbsp; }
-				</code>
-				<form id="contactForm" class="contact-form form" method="post">
-					<div class="row">
+		<section class="content p-5"> <!-- Content -->
+			<div class="row">
+				<div class="col-s-7 col-7">
+					<form id="contactForm" class="contact-form form" method="post">
 						<div class="form-group">
 							<!-- <label>Message: </label> -->
-							<textarea id="message" placeholder="Your Message" value="" class="form-control" rows="5" type="textarea"></textarea>
+							<textarea id="message" placeholder="Your Message" value="" class="form-control" rows="5"
+								type="textarea"></textarea>
 						</div>
-						<div class="form-group col-s-6">
-							<!-- <label>Name: </label> -->
-							<input id="name" placeholder="Your Name" value="" class="form-control" type="text" autocomplete='name'>
+						<div class="row">
+							<div class="form-group col-6 p-0">
+								<!-- <label>Name: </label> -->
+								<input id="name" placeholder="Your Name" value="" class="form-control" type="text"
+									autocomplete='name'>
+							</div>
+							<div class="form-group col-6 p-0">
+								<!-- <label>Email: </label> -->
+								<input id="email" placeholder="Your Email" value="" class="form-control" type="email"
+									autocomplete='email'>
+							</div>
+							<div class="form-group col-12 p-0">
+								<button class="btn btn-block" type="submit" onclick="formReset()">Submit</button>
+							</div>
 						</div>
-						<div class="form-group col-s-6">
-							<!-- <label>Email: </label> -->
-							<input id="email" placeholder="Your Email" value="" class="form-control" type="email" autocomplete='email'>
-						</div>
-						<div class="form-group col-s-12">
-							<button class="btn col-s-6" type="submit">Submit</button>
-							<span class="btn col-s-6" onclick="formReset()">Reset</span>
-						</div>
-					</div>
-				</form>
-			</div>
-			<div class="col-s-4 pt-5 pb-5 pl-5 col-4">
-				<h4>You can find me at</h4>
-				<p>Address line 1 <br>
-					Address line 2 <br> 
-					City, State <br> 
-					Country <br> 
-				</p>
-				<span>
-					<i class="fa fa-facebook"></i> &nbsp; 
-					<i class="fa fa-twitter"></i> &nbsp; 
-					<i class="fa fa-github"></i> &nbsp; 
-				</span>
-			</div>
+					</form>
+				</div>
+				<div class="col-s-5 col-5">
+					<h4>You can find me at</h4>
+					<p>9, Tunse Street, Ilara, <br>
+						Epe, Lagos, <br>
+						Nigeria. <br>
+					</p>
+					<span>
+						<i class="fa fa-facebook"></i> &nbsp;
+						<i class="fa fa-twitter"></i> &nbsp;
+						<i class="fa fa-github"></i> &nbsp;
+					</span>
+				</div>
 			</div>
 			
-			<div class="row px-5"><div class="col-s-12"><table class="table anim slideInUp">
+			<!-- <div class="row px-5"><div class="col-s-12"><table class="table anim slideInUp">
 				<thead>
 					<tr>
 						<th>Full Name</th>
@@ -98,7 +95,7 @@
 				<tbody id="contactFormEntry">
 					
 				</tbody>
-			</table></div></div>
+			</table></div></div> -->
 	
 		</section> <!--/ Content -->
 

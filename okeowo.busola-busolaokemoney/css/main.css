@@ -127,29 +127,34 @@ img {
 	text-align: center;
 	font-family: 'Ubuntu', 'Courier New', sans-serif;
   font-size: 1rem;
+  margin: 3px 0;
 }
 .btn:hover {
 	background-color: #405388;
 	color: #fff;
 }
-.container {
-  pdding: 15px;
+.btn-block {
+  width: 100%;
 }
-.p-5 { padding: 3.5rem; }
-.px-5 { padding-left: 3.5rem; padding-right: 3.5rem; }
-.pl-5 { padding-left: 3.5rem; }
-.pt-5 { padding-top: 3.5rem; }
-.pb-5 { padding-bottom: 3.5rem; }
-.pr-5 { padding-right: 3.5rem; }
-.py-5 { padding-top: 3.5rem; padding-bottom: 3.5rem; }
+.container {
+  padding: 15px;
+}
+.p-0 {padding:0 !important;}
+.p-5 { padding: 3.5rem !important; }
+.px-5 { padding-left: 3.5rem !important; padding-right: 3.5rem !important; }
+.pl-5 { padding-left: 3.5rem !important; }
+.pt-5 { padding-top: 3.5rem !important; }
+.pb-5 { padding-bottom: 3.5rem !important; }
+.pr-5 { padding-right: 3.5rem !important; }
+.py-5 { padding-top: 3.5rem !important; padding-bottom: 3.5rem !important; }
 
-.m-5 { margin: 3.5rem; }
-.mx-5 { margin-left: 3.5rem; margin-right: 3.5rem; }
-.ml-5 { margin-left: 3.5rem; }
-.mt-5 { margin-top: 3.5rem; }
-.mb-5 { margin-bottom: 3.5rem; }
-.mr-5 { margin-right: 3.5rem; }
-.my-5 { margin-top: 3.5rem; margin-bottom: 3.5rem; }
+.m-5 { margin: 3.5rem !important; }
+.mx-5 { margin-left: 3.5rem !important; margin-right: 3.5rem !important; }
+.ml-5 { margin-left: 3.5rem !important; }
+.mt-5 { margin-top: 3.5rem !important; }
+.mb-5 { margin-bottom: 3.5rem !important; }
+.mr-5 { margin-right: 3.5rem !important; }
+.my-5 { margin-top: 3.5rem !important; margin-bottom: 3.5rem !important; }
 
 a {
 	color: #fe4c50;
@@ -171,7 +176,7 @@ a {
 	background-color: #eee;
 }
 .bg-primary {
-	background-color: #ffa7a9;
+	background-color: #ffcccd;
 	color: #2f2f2f;
 }
 .bg-primary .btn {
@@ -274,7 +279,7 @@ a {
 	text-align: center;
 	padding-top: 0;
 	padding-bottom: 1rem;
-	border-bottom: 0.8px solid #aaa;
+	/* border-bottom: 0.8px solid #aaa; */
 	margin: 0 2rem;
 }
 
@@ -595,9 +600,13 @@ a {
   padding: 1rem; 
   background-color: #fe4c50;
   color: #fe4c50;
-  margin-left: -4rem;
+  margin-left: -2rem;
 }
-.edu-subtitle {
+.edu-subtitle, .exp-subtitle {
+  color: #989898;
+}
+.edu-timeline, .exp-timeline {
+  padding-top: 0;
   color: #989898;
 }
 
