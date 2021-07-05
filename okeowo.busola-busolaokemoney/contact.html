@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Contact - SheWritesCode</title>
+    <link rel="stylesheet" type="text/css" href="css/main.css" />
+    <link rel="stylesheet" type="text/css" href="css/grid.css" />
+    <link rel="stylesheet" type="text/css" href="css/animation.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
+    />
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css?family=Ubuntu|Yatra+One|Monoton|Ubuntu+Mono"
+    />
+  </head>
+  <body>
+    <div class="wrapper">
+      <a class="totop" href="#top"><i class="fa fa-arrow-up"></i> </a>
+      <div class="nav-container">
+        <!-- Navigation -->
+        <div class="row">
+          <div class="col-s-12 container">
+            <div class="brand">
+              <!-- Brand -->
+              <a href="#">
+                <<span>She</span>WritesCode/>
+              </a>
+            </div>
+            <!--/ Brand -->
+            <label for="menu-check" class="menu-icon">
+              <span></span>
+              <span></span>
+              <span></span>
+            </label>
+            <input type="checkbox" id="menu-check" />
+            <nav class="navbar">
+              <!-- Nav Links -->
+              <ul class="nav-menu">
+                <li><a href="index.html"> Home </a></li>
+                <li><a href="about.html"> About </a></li>
+                <li><a href="portfolio.html"> Portfolio </a></li>
+                <li><a class="active" href="contact.html"> Contact </a></li>
+              </ul>
+            </nav>
+            <!--/ Nav Links -->
+          </div>
+        </div>
+      </div>
+      <!--/ Navigation -->
+      <header class="header-contact">
+        <div class="caption">
+          <h1>Lets Talk</h1>
+          <!-- Heading -->
+        </div>
+      </header>
+      <section class="content p-5">
+        <!-- Content -->
+        <div class="row">
+          <div class="col-s-7 col-7">
+            <form id="contactForm" class="contact-form form" method="post">
+              <div class="form-group">
+                <!-- <label>Message: </label> -->
+                <textarea
+                  id="message"
+                  placeholder="Your Message"
+                  value=""
+                  class="form-control"
+                  rows="5"
+                  type="textarea"
+                ></textarea>
+              </div>
+              <div class="row">
+                <div class="form-group col-6 p-0">
+                  <!-- <label>Name: </label> -->
+                  <input
+                    id="name"
+                    placeholder="Your Name"
+                    value=""
+                    class="form-control"
+                    type="text"
+                    autocomplete="name"
+                  />
+                </div>
+                <div class="form-group col-6 p-0">
+                  <!-- <label>Email: </label> -->
+                  <input
+                    id="email"
+                    placeholder="Your Email"
+                    value=""
+                    class="form-control"
+                    type="email"
+                    autocomplete="email"
+                  />
+                </div>
+                <div class="form-group col-12 p-0">
+                  <button
+                    class="btn btn-block"
+                    type="submit"
+                    onclick="formReset()"
+                  >
+                    Submit
+                  </button>
+                </div>
+              </div>
+            </form>
+          </div>
+          <div class="col-s-5 col-5">
+            <h4>You can find me at</h4>
+            <p>
+              9, Tunse Street, Ilara, <br />
+              Epe, Lagos, <br />
+              Nigeria. <br />
+            </p>
+            <span>
+              <i class="fa fa-facebook"></i> &nbsp;
+              <i class="fa fa-twitter"></i> &nbsp;
+              <i class="fa fa-github"></i> &nbsp;
+            </span>
+          </div>
+        </div>
+
+        <!-- <div class="row px-5"><div class="col-s-12"><table class="table anim slideInUp">
+				<thead>
+					<tr>
+						<th>Full Name</th>
+						<th>Email</th>
+						<th>Message</th>
+						<th>Action</th>
+					</tr>
+				</thead>
+				<tbody id="contactFormEntry">
+					
+				</tbody>
+			</table></div></div> -->
+      </section>
+      <!--/ Content -->
+
+      <footer class="foot">
+        <!-- Footer -->
+
+        <p>
+          &copy; <span id="year"></span>
+          <span
+            >Made with <i class="fa fa-heart"></i> by
+            <a href="https://shecodes.com.ng"> shewritescode</a></span
+          >
+        </p>
+      </footer>
+      <!--/ Footer -->
+    </div>
+    <script src="js/main.js"></script>
+    <script src="js/contact.js"></script>
+  </body>
+</html>

@@ -1,0 +1,12 @@
+---
+deployment:
+  tasks:
+    - export DEPLOYPATH=/home2/shecodes/public_html/
+    - /bin/cp -R okeowo.busola-busolaokemoney/img $DEPLOYPATH
+    - /bin/cp -R okeowo.busola-busolaokemoney/css $DEPLOYPATH
+    - /bin/cp -R okeowo.busola-busolaokemoney/js $DEPLOYPATH
+    - /bin/cp okeowo.busola-busolaokemoney/index.html $DEPLOYPATH
+    - /bin/cp okeowo.busola-busolaokemoney/about.html $DEPLOYPATH
+    - /bin/cp okeowo.busola-busolaokemoney/contact.html $DEPLOYPATH
+    - /bin/cp okeowo.busola-busolaokemoney/portfolio.html $DEPLOYPATH
+    - /bin/cp okeowo.busola-busolaokemoney/package.json $DEPLOYPATH
