@@ -1,0 +1,200 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <title>Ballegen</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+  <style>
+    .navbar{
+    	margin-bottom:0;
+    	border-radius:0;
+    	background-color:#534485;
+    	color:#fff;
+    	padding:1% 0;
+    	font-size:1.2em;
+    	border:0;
+}
+.navbar-brand{
+	min-height:55px;
+	padding:0 15px 0 5px;
+}
+.navbar-inverse .navbar-nav .active a, .navbar-inverse .navbar-nav .active a:focus, .navbar-inverse .navbar-nav .active a:hover{
+   color:#fff;
+   background-color:#534485;
+}
+.navbar-inverse .navbar-nav .active li a{
+	color:#d5d6d1;
+}
+.carousel-caption{
+	top:50%;
+	transform:translateY(-50%);
+	text-transform:uppercase;
+}
+.btn{
+	font-size:18px;
+	color:white;
+	padding:12px 22px;
+	background-color:#5e4485;
+	border:2px solid #fff;
+	border-radius:15px;
+}
+@media (max-width: 600px){
+	.carousel-caption{
+		display:none;
+	}
+}
+footer{
+	width:100%;
+	background-color:#5e4485;
+	color:white;
+	padding:3%;
+}
+.fa{
+	padding:15px;
+	font-size:25px;
+	color:white;
+}
+.fa:hover{
+	text-decoration:none;
+	color:#a9b2f5;
+}
+.box{
+	text-align:center;
+	
+}
+.item{
+	min-height:55px;
+}
+.well{
+	background-color:#5e4485;
+	color:white;
+}
+.navbar-header{
+	height:60px;
+}.navbar-brand h2{
+	font-family:decorative;
+}
+</style>
+</head>
+<body>
+<nav class="navbar navbar-inverse">
+	<div class="container-fluid">
+		<div class="navbar-header">
+			<button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#MyNavbar">
+				<span class="icon-bar"></span>
+				<span class="icon-bar"></span>
+				<span class="icon-bar"></span>
+			</button>
+			<a class="navbar-brand" href=""><img src="bootstrap.png" width="90px" height="60px" ></a>
+			<a class="navbar-brand" href=""><h2>BALLEGEN</h2></a>
+		</div>
+		<div class="collapse navbar-collapse" id="MyNavbar">
+			<ul class="nav navbar-nav navbar-right">
+				<li ><a href="index.html">Home</a></li>
+				<li><a href="about.html">About</a></li>
+				<li class="active"><a href="contact.html">Contact us</a></li>
+				</ul>
+			</div>
+	</div>
+	</nav><br>
+	<div id="myCarousel" class="carousel slide" data-ride="carousel">
+		
+		<div class="carousel-inner" role="listbox">
+			<div class="item active abt">
+				<img src="iphone.jpg" class="img-responsive" >
+				<div class="carousel-caption">
+					<h1>Contact Ballegen</h1>
+					<br>
+					<button type="button" data-toggle="collapse" data-target="#Cat" class="btn btn-default">CONTACT US</button>
+				</div>
+			</div>
+			    
+		</div>
+		
+			
+	</div><br><br>
+	<div class="container">
+		<h1 class="text-center">Contact Us</h1>
+		<div class="alert" id="msg"></div>
+		<form id="regForm">
+		  <div class="form-group">
+		    <label>Name</label>
+		    <input type="text" class="form-control" id="name" name="name">
+		  </div>
+		  <div class="form-group">
+		    <label>Email</label>
+		    <input type="text" class="form-control" id="email" name="email">
+		  </div>
+		  <div class="form-group">
+		    <label>Message</label>
+		    <textarea class="form-control" id="area" name="textarea"></textarea>
+		  </div>
+
+		  <button type="submit" method="POST" class="btn btn-default dan">Submit</button>
+		</form>
+	</div><br>
+
+      <div class="container">
+  	<div class="row">
+  		<h4><a href="#hidden" data-toggle="collapse">Care to learn more?</a></h4>
+  		<div class="collapse" id="hidden">
+  			<h4></h4><br>
+  			<p>Ballegen is a company created and founded by Enemchukwu Daniel Chigozie.A graduate of the great Yaba college of Education(OND).Here at ballegen,we offer good services that are affordable.Ballegen brings out the best in you.Connect with us,like our page and share.God bless you.</p>
+  		</div>
+   </div>
+</div><br>
+<footer class="container-fluid text-center">
+	<div class="row">
+		<div class="col-sm-4">
+			<h3>Contact Us</h3><br>
+			<p>Our address and info here.</p>
+		</div>
+		<div class="col-sm-4">
+			<h3>Connect With Us</h3>
+			<a href="https://web.facebook.com/daniel.enemchukwu" class="fa fa-facebook"></a>
+			<a href="https://twitter.com/gtupid" class="fa fa-twitter"></a>
+			<a href="https://www.instagram.com/daniellflame/" class="fa fa-instagram"></a>
+		</div>
+		<div class="col-sm-4">
+			<img src="bunny.png" class="icon">
+		</div>
+	</div>
+         <p>Copyright &copy; DanielFlames</p>
+</footer>
+<script type="text/javascript">
+		function register(e){
+         e.preventDefault();
+
+         var name = document.getElementById("name").value;
+         var email = document.getElementById("email").value;
+         var area = document.getElementById("area").value;
+         var msg = document.getElementById('msg');
+		 var atpos = email.indexOf("@");
+	     var dotpos = email.lastIndexOf(".");
+
+	     if (name == "" || email == "" || area == "" ) {
+	     	    msg.className="alert alert-danger";
+				msg.innerHTML = 'Please fill out all fields';
+	     }else{
+	     	if (name.length<6) {
+	     		    msg.className="alert alert-danger";
+					msg.innerHTML = 'Name must be at least 6 characters';
+	     	}else{
+	     		if (atpos < 1 || dotpos < atpos+2 || dotpos+2 >= email.length) {
+	     			    msg.className="alert alert-danger";
+						msg.innerHTML = 'Please use valid email';
+	     		}else{
+	     			        msg.className="alert alert-success";
+							msg.innerHTML = name+' at '+ email + '. Your Message has been submitted';
+	     		}
+	     	}
+	     }
+		}
+		document.getElementById('regForm').addEventListener('submit', register, true);
+	</script>
+</body>
+</html>
