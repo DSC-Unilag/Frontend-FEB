@@ -1,0 +1,138 @@
+*{
+	overflow-y: hidden;
+}
+.todoscontainer{
+	width: 100%;
+}
+.sidenav{
+    width: 30%;
+    height: 50%; 
+	background-color: antiquewhite;
+	box-shadow: 3px 3px 5px black;
+	position: fixed;
+	margin-top: 5%;
+}
+.todos{
+    margin-left: 30%;
+    width: 70%; 
+    height: 75vh; 
+    background-color: white;
+    overflow-y: hidden;
+}
+.todo-group{
+    height: 75vh;
+	margin-bottom : 100vh;
+	overflow: auto;
+	background-color: antiquewhite;
+}
+.sidenav .navButton{
+	text-decoration: none;
+	color: sienna;
+	display: block;
+    padding: 1em 1em;
+    text-align: center; 
+}
+.sidenav .navButton:hover {
+	background-color: #3a6186 ;
+	cursor: pointer;
+}
+
+.newTodo{
+	float: right;
+	margin-right: 5px;
+	color : black;
+	font-size: 30px;
+}
+.newTodoButton{
+	border-radius: 50%; 
+	transform: translateY(-5px); 
+	background-color: sienna;
+	font-weight: bolder ; 
+	
+}
+.newTodoBlock{
+	height:100%; 
+	width:0; 
+	background-color: white; 
+	top : 0;
+	right : 0;
+	position: absolute;
+	
+}
+.newTodoBlockActive{
+	padding-left: 15px; 
+	width:70%; 
+	transition: 0.5s linear;
+}
+#closeButton:hover, .newTodoButton:hover{
+	cursor: pointer;
+}
+.todoCategoryHeader{
+	text-align: center;
+	text-transform: uppercase;
+	font-weight: 600;
+	color: #89253e;
+}
+.delete{
+	float: right;
+	color: red;
+	font-size: 25px;
+	font-weight: 900;
+	padding: 5px 15px;
+}
+.complete{
+	float: right;
+	color: green;
+	font-size: 25px;
+	font-weight: 900;
+	padding: 5px 15px;
+}
+.delete:hover, .complete:hover{
+	cursor: pointer;
+}
+@media screen and (max-width : 768px) {
+	.sidenav {
+		width: 100%;
+		margin-top: 0;
+		border-top: 1px solid #3a6186;
+		height: 100%;
+		position: relative;
+	}
+	.sidenav .navButton{
+		display: inline;
+	}
+	.todos{
+		width: 100%;
+		margin-top: 0;
+		margin-left: 0;
+	}
+}
+@media screen and (max-width: 506px){
+	.sidenav .navButton{
+		padding: 14px 10px;
+	}
+}
+@media screen and (max-width: 406px){
+	.sidenav .navButton{
+		padding: 14px 8px;
+	}
+}
+li{
+	padding: 20px;
+	border-bottom : 2px solid sienna;
+}
+li:first-of-type{
+	border-top : 2px solid sienna;
+}
+li:hover{
+	background-color: darkkhaki;
+}
+li[class=personalcolor]{
+	background-color: aliceblue ;
+}
+li[class=homecolor]{
+	background-color: sandybrown;
+}
+li[class=workcolor]{
+	background-color: wheat ;
+}
