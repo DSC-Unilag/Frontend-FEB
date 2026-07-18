@@ -1,0 +1,771 @@
+/******************************
+Author: Okeowo Busola
+Email: busolaokemoney@gmail.com
+Description: A Portfolio Site;
+
+[Table of Contents]
+
+1. Fonts
+2. Body and some general stuff
+  2.1 General header
+  2.1 article title
+3. Header
+  3.1 Logo
+  3.2 Large screen main navigation
+  3.3 Small screen main navigation
+4. Home
+  4.1 Skills
+5. About
+6. Portfolio
+  6.1 cards
+5. Services
+6. Contact
+7. Footer
+
+******************************/
+.img-overlay {
+  position: relative;
+}
+.img-rounded:hover + .middle:hover + .img-overlay:hover {
+  transition: .5s ease;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  height: 100%;
+  width: 100%;
+  background: #33333357;
+  transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%);
+  text-align: center;
+  padding: 3.5rem 1rem;
+  border-radius: 150rem;
+  opacity: 1;
+
+}
+.middle {
+  opacity: 0;
+}
+
+.text {
+  margin: 3.5rem 1rem;
+  color: white;
+  font-size: 16px;
+  padding: 16px 32px;
+}
+
+
+
+/***********
+1. Fonts
+***********/
+@import url('https://fonts.googleapis.com/css?family=Ubuntu|Yatra+One|Monoton|Ubuntu+Mono');
+
+/*********************************
+2. Body and some general stuff
+*********************************/
+
+*{
+  box-sizing: border-box;
+}
+html {
+  scroll-behavior: smooth;
+}
+body{
+  margin: 0;
+  padding: 0;
+  font-family: 'Ubuntu', 'Courier New', sans-serif;
+  font-size: 1rem;
+  font-weight: 400;
+  line-height: 1.5;
+  color: #2f2f2f;
+  text-align: left;
+  background-color: #fff;
+}
+input {
+  font-family: 'Ubuntu Mono', 'Courier New', sans-serif;
+  font-size: 1rem;
+  margin: 0.01rem;
+}
+code{ padding: 2rem; }
+article{margin: 0;}
+section{margin: 0;
+  position: static;}
+img {
+  max-width: 100%;
+  height: auto;
+}
+.img-rounded {
+  padding: 0.25rem;
+  background-color: #fff;
+  border: 1px solid #dee2e6;
+  border-radius: 150rem;
+  max-width: 100%;
+  height: auto;
+}
+
+
+.center-content {
+  margin-left: auto;
+  margin-right: auto;
+  width: 70vw;
+}
+
+.text-center {
+	text-align: center;
+}
+.btn {
+	padding: 0.8rem;
+	background-color: #fe4c50;
+	color: #fff;
+	text-decoration: none;
+    transition: all 0.3s linear;
+    font-weight: bold;
+    border: none;
+	box-shadow: 0 0 16px rgba(0, 0, 0, 0.15);
+	min-width: 100px;
+	border-radius: 0.5rem;
+	text-align: center;
+	font-family: 'Ubuntu', 'Courier New', sans-serif;
+  font-size: 1rem;
+  margin: 3px 0;
+}
+.btn:hover {
+	background-color: #405388;
+	color: #fff;
+}
+.btn-block {
+  width: 100%;
+}
+.container {
+  padding: 15px;
+}
+.p-0 {padding:0 !important;}
+.p-5 { padding: 3.5rem !important; }
+.px-5 { padding-left: 3.5rem !important; padding-right: 3.5rem !important; }
+.pl-5 { padding-left: 3.5rem !important; }
+.pt-5 { padding-top: 3.5rem !important; }
+.pb-5 { padding-bottom: 3.5rem !important; }
+.pr-5 { padding-right: 3.5rem !important; }
+.py-5 { padding-top: 3.5rem !important; padding-bottom: 3.5rem !important; }
+
+.m-5 { margin: 3.5rem !important; }
+.mx-5 { margin-left: 3.5rem !important; margin-right: 3.5rem !important; }
+.ml-5 { margin-left: 3.5rem !important; }
+.mt-5 { margin-top: 3.5rem !important; }
+.mb-5 { margin-bottom: 3.5rem !important; }
+.mr-5 { margin-right: 3.5rem !important; }
+.my-5 { margin-top: 3.5rem !important; margin-bottom: 3.5rem !important; }
+
+a {
+	color: #fe4c50;
+}
+.content {
+ padding-bottom: 0;
+ padding-top: 2rem;
+}
+.bg-image1 {
+	background: url(../img/header.jpg);
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+.bg-image1 > .overlay {
+	background-color: #33333357;
+  color: #fff;
+}
+.bg-grey {
+	background-color: #eee;
+}
+.bg-primary {
+	background-color: #ffcccd;
+	color: #2f2f2f;
+}
+.bg-primary .btn {
+	background-color: #405388;
+	color: #fff;
+}
+.bg-primary a {
+	color: #405388;
+}
+.bg-primary .title {
+  color: #2f2f2f;
+}
+.bg-primary .title::before {
+  content: "<";
+  color: #405388;
+}
+.bg-primary .title::after {
+	content: "/>";
+	color: #405388;
+}
+.bg-secondary {
+	background-color: #405388;
+	color: #fff;
+}
+.bg-secondary .btn {
+	background-color: #fe4c50;
+}
+.bg-secondary a {
+	color: #fe4c50;
+}
+.totop {
+  position: fixed;
+  bottom: 1.5rem;
+  right: 1.5rem;
+  height: 3rem;
+  width: 3rem;
+  background-color: #fe4c50;
+  z-index: 1000;
+  border-radius: 5rem; 
+  visibility: hidden;
+  padding: 0.75rem;
+  display: block;
+  text-align: center;
+  color: #fff;
+}
+.totop a{
+  color: #fff;
+}
+/******************
+2.1 General Header
+******************/
+[class*="header-"] {
+	margin-top: 6.9rem;
+	text-align: center;
+	background: url(../img/gheader.jpeg);
+	background-size: cover;
+	background-repeat: no-repeat;
+	display: block;
+	position: static;
+	min-height: calc(30vh - 7rem);
+	color: #fff;
+}
+[class*="header-"] > .caption {
+	background-color: #111111a5;
+	margin: 0;
+	min-height: calc(30vh - 7rem);
+	padding: 1.5rem;
+}
+@media only screen and (min-width: 600px) {
+	[class*="header-"] {
+		min-height: 10vh;
+	}
+	[class*="header-"] > .caption {
+		min-height: 10vh;
+	}
+}
+
+/*****************
+2.2 Article Title
+*****************/
+.title {
+	font-size: 1.8rem;
+	font-weight: 700;
+	text-transform: uppercase;
+	text-align: center;
+	padding-bottom: 0.2rem;
+	margin: 0 2rem;
+}
+.title::before {
+	content: "<";
+	color: #fe4c50;
+}
+.title::after {
+	content: "/>";
+	color: #fe4c50;
+}
+.subtitle {
+	font-size: 1.2rem;
+	font-weight: 400;
+	text-align: center;
+	padding-top: 0;
+	padding-bottom: 1rem;
+	/* border-bottom: 0.8px solid #aaa; */
+	margin: 0 2rem;
+}
+
+/*********
+3 Home
+**********/
+.header-home{
+	background: url(../img/header.jpg);
+	background-size: cover;
+	background-repeat: no-repeat;
+	display: block;
+	min-height: 70vh;
+	margin-top: 0;
+	padding-top: 6.9rem;
+	width: 100vw;
+	text-align: left;
+	color: #1e1e27;
+	right: 0;
+	left: 0;
+}
+.header-home > .caption {
+	background-color: transparent;
+	margin: 0;
+  position: relative;
+  top: calc(70vh/9);
+	padding: 3.5rem 2rem;
+}
+.header-home h1 {
+	font-family: 'Monoton', sans-serif;
+	font-size: 4.5rem;
+	color: #fe4c50;
+	margin-bottom: 0px;
+	line-height: 0.2;
+	text-transform: uppercase;
+}
+.header-home h3 {
+	padding-top: 0.8rem;
+	line-height: 1;
+}
+
+@media only screen and (min-width: 600px) {
+  /* Optional really wide layout for wide-screen monitors  */
+  .header-home{
+    min-height: 70vh;
+  }
+	.header-home > .caption {    
+    padding: 3rem 7rem 3rem;
+    display: block;
+    position: relative;
+    top: calc(70vh/4);
+	}
+	.header-home h1 {
+		font-size: 6.5rem;
+	}
+	.header-home h3 {
+		font-size: 1.8rem;
+	}
+} 
+
+@media only screen and (min-width: 800px) {
+  /* Optional really wide layout for wide-screen monitors  */
+  .header-home{
+    min-height: calc(100vh);
+  }
+  .header-home > .caption {    
+    padding: 3rem 7rem 3rem;
+    display: block;
+    position: relative;
+    top: calc(100vh/7);
+  }
+  .header-home h1 {
+    font-size: 8rem;
+  }
+  .header-home h3 {
+    font-size: 2.3rem;
+  }
+}
+/**********
+3.1 Logo
+**********/
+
+.brand {
+  padding: 1.8rem;
+  position: absolute;
+  top: 3.5rem;
+  -webkit-transform: translateY(-50%);
+  -moz-transform: translateY(-50%);
+  -ms-transform: translateY(-50%);
+  -o-transform: translateY(-50%);
+  transform: translateY(-50%);
+  left: 15px;
+  font-family: 'Yatra One', 'Comic Sans MS', cursive;
+}
+.brand a {
+  font-size: 120%;
+  color: #2f2f2f;
+  font-weight: 700;
+  text-decoration: none;
+  text-transform: uppercase;
+  padding: 0;
+  margin: 0;
+}
+.brand a span {
+  color: #fe4c50;
+}
+
+
+/********************************
+3.2 Large screen main navigation
+********************************/
+.nav-container{
+  width: 100%;
+  background: #FFFFFF;
+  box-shadow: 0 0 16px rgba(0, 0, 0, 0.15);
+  min-height: 7rem;
+  position: fixed;
+  top:0;
+  left:0;
+  right:0;
+  z-index: 1000;
+}
+.navbar {
+  width: auto;
+  height: auto;
+  float: right;
+  padding-left: 0px;
+  padding-right: 0px;
+  background: #fff418;
+}
+.nav-menu li {
+  display: inline-block;
+}
+  .navbar > .nav-menu > li:hover{
+	background-color: #fe4c50;
+	color: #fff;
+  }
+.nav-menu li a {
+  display: block;
+  color: #1e1e27;
+  text-decoration: none;
+  font-size: 1.2rem;
+  font-weight: 700;
+  text-transform: lowercase;
+  padding: 15px;
+  -webkit-transition: color 0.3s ease;
+  -moz-transition: color 0.3s ease;
+  -ms-transition: color 0.3s ease;
+  -o-transition: color 0.3s ease;
+  transition: color 0.3s ease;
+}
+  .navbar > .nav-menu > li a:hover::before {
+	background-color: #fe4c50;
+	color: #fff;
+	content: "<";
+  }
+
+  .navbar > .nav-menu > li a:hover::after {
+	background-color: #fe4c50;
+	color: #fff;
+	content: "/>";
+  }
+.nav-menu li a:hover, .navbar > .nav-menu > li > .active:hover{
+  color: #fff;
+}
+.nav-menu li a:active, .navbar > .nav-menu > li > .active:active {
+  color: #fff;
+}
+.navbar > .nav-menu > li a:active::before {
+	background-color: #fe4c50;
+	color: #fff;
+	content: "<";
+  }
+  .navbar > .nav-menu > li a:active::after{
+	background-color: #fe4c50;
+	color: #fff;
+	content: "/>";
+  }
+  
+.navbar > .nav-menu > li > .active{
+	color: #fe4c50;
+}
+.navbar > .nav-menu > li > .active::after {
+	background-color: #fff;
+	color: #fe4c50;
+	content: "/>";
+}
+.navbar > .nav-menu > li > .active::before {
+	background-color: #fff;
+	color: #fe4c50;
+	content: "<";
+}
+#menu-check {
+  display: none;
+}
+
+
+/********************************
+3.3 Small screen main navigation
+********************************/
+@media (max-width: 768px) {
+  /* Styles for "average" mobile phone landscape; e.g., an iPhone  */
+
+  .menu-icon{
+    display: inline-block;
+    position: absolute;
+    right: 25px;
+    top: 30px;
+    padding: 15px;
+    width: 50px;
+    height: 50px;
+  }
+  .menu-icon:hover {
+    background-color: #fe4c50;
+  }
+  .menu-icon > span{
+    border-top: 2px solid #2f2f2f;
+    height: 10px;
+    display: block;
+    width: 25px;
+    margin: 0;
+  }
+  .navbar {
+	position: relative;
+	top: 6.9rem;
+    overflow-y: hidden;
+    background: #fff;
+    width: 100%;
+    height: 100vh;
+    left: 0px;
+    right:0;
+    transition: all 0.5s linear;
+    display: block;
+  }
+  .navbar > .nav-menu {
+  	margin: 0px;
+  	padding: 0px;
+  	list-style-type: none;
+  	list-style-position: inside;
+  }
+  .navbar > .nav-menu > li{
+    display: block;
+    position: relative;
+    right: 0px;
+    left: 0px;
+    text-align: center;
+  }
+  .navbar > .nav-menu > li > a{
+    display: block;
+    color: inherit;
+  }
+  .navbar > .nav-menu > li > a:hover{
+    color: inherit;
+  }
+ }
+  #menu-check:not(:checked) + .navbar {
+    height: 0px;
+  }
+
+  #menu-check:(:checked) + .navbar {
+    height: 100vh !important;
+    overflow: scroll;
+  }
+
+}
+
+/*****************
+4. Home
+*****************/
+
+/*****************
+4.1 Skills
+*****************/
+.skill-text {
+	font-size: 1.5rem;
+	text-align: center;
+}
+
+.progress {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  overflow: hidden;
+  font-size: 0.75rem;
+  background-color: #e9ecef;
+  border-radius: 0.25rem;
+}
+
+.progress-bar {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -ms-flex-direction: column;
+  flex-direction: column;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  color: #fff;
+  text-align: center;
+  background-color: #405388;
+  transition: width 0.6s ease;
+}
+
+/*****************
+5. About
+*****************/
+[class*="aedu-"] {
+  border-left: 3px solid #ddd;
+  padding: 0 2.5rem;
+}
+[class*="aedu-"]::before {
+  content: " ";
+  display: block;
+  border-radius: 5rem;
+  height: 0.5rem;
+  width: 0.5rem;
+  padding: 1rem; 
+  background-color: #fe4c50;
+  color: #fe4c50;
+  margin-left: -2rem;
+}
+.edu-subtitle, .exp-subtitle {
+  color: #989898;
+}
+.edu-timeline, .exp-timeline {
+  padding-top: 0;
+  color: #989898;
+}
+
+/*****************
+6. Portfolio
+*****************/
+
+/*****************
+6.1  Card
+*****************/
+.card {
+	box-shadow: 0 0 16px rgba(0, 0, 0, 0.15);
+	background-color: #fff;
+  margin: 1rem;
+}
+.card > .card-img {
+  width: 100%;
+}
+.card > .card-img > img {
+	object-fit: cover;
+	width: 100%;
+	height: auto;
+}
+.card-body {
+  -webkit-box-flex: 1;
+  -ms-flex: 1 1 auto;
+  flex: 1 1 auto;
+  padding: 1.25rem;
+  color: #2f2f2f;
+}
+.card-body > h3 {
+  margin-bottom: 0.75rem;
+}
+.card-body > h4 {
+  margin-top: -0.375rem;
+  margin-bottom: 0;
+}
+
+
+/*****************
+7. Services
+*****************/
+[class*="aservice-"] {
+	border-bottom: 1px solid #eee;
+	padding: 0.25rem 1rem;
+}
+[class*="aservice-"]:nth-child(odd) {
+	text-align: left;
+	border-left: 1px solid #eee;
+}
+[class*="aservice-"]:nth-child(even) {
+	text-align: right;
+	border-right: 1px solid #eee;
+}
+[class*="aservice-"]:last-child {
+	border-bottom: none;
+}
+
+@media only screen and (min-width: 600px) {
+  /* Optional really wide layout for wide-screen monitors  */
+  [class*="aservice-"] {
+  	border-bottom: none;
+  }
+  [class*="aservice-"]:nth-child(odd) {
+  	text-align: center;
+  	border-left: none
+  }
+  [class*="aservice-"]:nth-child(even) {
+  	text-align: center;
+  	border-right: none;
+  }
+} 
+
+/***************
+8. Contact
+******************/
+
+.contact-form > .form-group label {
+	display: none !important;
+}
+.form-group {
+    display: flex;
+    flex: 0 0 auto;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+    flex-flow: row wrap;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+    margin-bottom: 0;
+}
+.form-control {
+  display: block;
+  width: 100%;
+  padding: 0.375rem 0.75rem;
+  font-size: 1.2rem;
+  line-height: 1.5;
+  color: #495057;
+  margin-top: 0.15rem;
+  background-color: #fff;
+  background-clip: padding-box;
+  border: none;
+  border-radius: 0.5rem;
+  box-shadow: 0 0 16px rgba(0, 0, 0, 0.15);
+  transition: border-color 0.15s ease-in-out, box-shadow 0.15s ease-in-out;
+}
+
+.form-control:focus {
+  color: #495057;
+  background-color: #fff;
+  border-color: #eee;
+  outline: 0;
+  box-shadow: 0 0 0 0.2rem rgba(0, 123, 255, 0.25);
+}
+
+.form-control::placeholder {
+  color: #6c757d;
+  opacity: 1;
+}
+
+
+.table {
+  max-width: 100%;
+  margin-top: 1rem;
+  margin-bottom: 1rem;
+  border: 1px solid #dee2e6;
+  background-color: transparent;
+  display: block;
+  overflow-x: auto;
+  border-collapse: collapse;
+}
+
+th, td{
+    border-bottom: 1px solid #dee2e6;
+    padding: 1rem;
+    margin: 1rem;
+}
+td { vertical-align: bottom;}
+
+
+/***************
+8. Footer
+******************/
+footer {
+	background: #2f2f2f;
+	position: relative;
+	bottom: 0px;
+	width: 100%;
+	margin: 0;
+	padding: 0;
+	color: #fff;
+	max-height: 1rem;
+}
+footer > p {
+	text-align: center;
+	width: 100%;
+	padding: 1rem;
+	background: inherit;
+  margin: 0;
+}
+
+

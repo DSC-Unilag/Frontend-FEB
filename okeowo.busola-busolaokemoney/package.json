@@ -1,0 +1,19 @@
+{
+  "name": "portfoliosite",
+  "version": "1.0.0",
+  "description": "",
+  "main": "js/main.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/she-WritesCode/Frontend-FEB.git"
+  },
+  "author": "Busola Okeowo <busolaokemoney@gmail.com>",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/she-WritesCode/Frontend-FEB/issues"
+  },
+  "homepage": "https://github.com/she-WritesCode/Frontend-FEB#readme"
+}
