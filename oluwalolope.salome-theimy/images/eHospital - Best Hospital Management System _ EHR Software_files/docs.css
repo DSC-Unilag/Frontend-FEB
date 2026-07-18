@@ -1,0 +1,148 @@
+.docs-section {
+  margin-bottom: 78px;
+  font-size: 16px;
+}
+.docs-section .page-header {
+  border-bottom: 1px solid #dadedf;
+  margin-bottom: 52px;
+  padding-bottom: 26px;
+}
+.docs-section .page-header h1 {
+  font-size: 36px;
+  margin: 0;
+}
+@media (min-width: 768px) {
+  .docs-section .page-header h1 {
+    font-size: 56px;
+  }
+}
+.docs-section > h2 {
+  margin-bottom: 26px;
+}
+.docs-section > h3 {
+  color: #3d4045;
+  margin-bottom: 26px;
+}
+.docs-section .dropdown-menu {
+  padding: 0;
+  margin: 0;
+}
+.docs-section .dropdown-menu li {
+  padding: 0 26px;
+}
+.docs-section .dropdown-menu li:first-child {
+  padding-top: 13px;
+}
+.docs-section .dropdown-menu li:last-child {
+  padding-bottom: 13px;
+}
+.docs-section .panel-body {
+  padding: 15px;
+}
+.example-type h1,
+.example-type h2,
+.example-type h3,
+.example-type h4,
+.example-type h5,
+.example-type h6 {
+  margin: 26px 0;
+}
+.example-colors .swatch-item {
+  width: 100%;
+  min-height: 100px;
+  position: relative;
+  background: #3d4045;
+  color: #ffffff;
+  margin-bottom: 26px;
+}
+@media (min-width: 1200px) {
+  .example-colors .swatch-item {
+    min-height: 123px;
+  }
+}
+.example-colors .swatch-item dl {
+  width: 100%;
+  position: absolute;
+  bottom: 0;
+  padding: 20px;
+  margin: 0;
+  font-size: 15px;
+}
+.example-colors .color-brand-primary {
+  background: #039be5;
+}
+.example-colors .color-brand-secondary {
+  background: #38b775;
+}
+.example-colors .color-brand-success {
+  background: #38b775;
+}
+.example-colors .color-brand-danger {
+  background: #f44336;
+}
+.example-colors .color-brand-warning {
+  background: #ff5722;
+}
+.example-colors .color-brand-info {
+  background: #03a9f4;
+}
+.example-colors .color-gray-darker {
+  background: #27292e;
+}
+.example-colors .color-gray-dark {
+  background: #3d4045;
+}
+.example-colors .color-gray {
+  background: #505656;
+}
+.example-colors .color-gray-light {
+  background: #96a1a3;
+  color: #3d4045;
+}
+.example-colors .color-gray-lighter {
+  background: #ecf0f1;
+  color: #3d4045;
+}
+.example-colors .color-gray-lightest {
+  background: #f4f6f7;
+  color: #3d4045;
+}
+.example-buttons .btn,
+.example-inputs .btn,
+.example-buttons .form-control,
+.example-inputs .form-control {
+  box-shadow: none;
+  width: 100%;
+  margin-bottom: 26px;
+}
+.example-buttons ul,
+.example-inputs ul {
+  padding: 0;
+  list-style: none;
+}
+@media screen and (min-width: 768px) {
+  .example-buttons ul li,
+  .example-inputs ul li {
+    float: left;
+    width: 30%;
+    padding-right: 26px;
+  }
+}
+.example-navigation .tab-content {
+  padding: 26px 0;
+}
+.example-navigation h3 {
+  color: #3d4045;
+  margin: 0 0 26px;
+}
+.example-type h1,
+.example-type h2 {
+  margin-top: 0;
+}
+.example-type h1 small,
+.example-type h2 small {
+  display: block;
+}
+.example-type h1 {
+  margin-top: 0;
+}
