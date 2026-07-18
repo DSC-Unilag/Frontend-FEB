@@ -1,0 +1,48 @@
+*{
+  margin: 0;
+  background-color:#333333;
+}
+nav{
+  background-color:;
+  font-family: 'Dancing Script', cursive;
+}
+nav ul{
+  list-style-type: none;
+  margin: 0;
+  padding:15px;
+  background-color: #333333;
+  text-align: right;
+}
+nav li{
+  display: inline-block;
+  padding-left:23px;
+  padding-right: 50px;
+  margin-left: 15px;
+}
+nav li :hover{
+  color:brown;
+}
+nav li a{
+  color: orange;
+  text-decoration: none;
+}
+img{
+  width :225px;
+  height: 250px;
+  border: 15px;
+  border-color: black;
+  border-radius: 50%;
+  display: flex;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 2em;
+}
+.text{
+  color: orange;
+  text-align: center;
+  margin-top: 2em;
+  line-height: 2em;
+  font-size: 2em;
+  word-spacing: 2em;
+  font-family: 'Dancing Script', cursive;
+}
