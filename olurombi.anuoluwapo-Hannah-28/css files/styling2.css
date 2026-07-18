@@ -1,0 +1,218 @@
+.navbar span{
+    padding-left: 1px;
+    padding-right: 1px
+}
+.navbar h1{
+    margin-top: 0;
+    margin-left: 0%;
+    font-size: 100%;
+}
+.navbar h3{
+    margin-left: 0%;
+    margin-top: -3.5vw;
+    font-size: 75%;
+}
+.navlist{
+    margin-top:-10px;
+}
+.navlist li{
+    padding :15px;
+    font-size: 100%;
+}
+.header{
+    margin-top:60px;
+    width: 115%;
+    margin-left:10%;
+    height:450px
+}
+.header a{
+    padding: 5px 5px;
+    margin: 10px;
+    font-size: 20px;
+}
+.header h1{
+    font-size: 210%;
+}
+.mask{
+    padding-top: 28%
+}
+.header p{
+    font-size: 115%
+}
+.img img{
+    width:330px;
+    height:330px;
+    margin-left:15%
+}
+.story{
+    width:95%;
+    margin-left:25%;
+    margin-top:100px
+}
+.story h5{
+    font-size: 180%;
+}
+.story h2{
+    font-size:20px;
+}
+.story p{
+    font-size:17px;
+}
+.story a{
+    padding: 0px 18px;
+    line-height: 40px;
+    font-size: 18px;
+    margin-top:15px
+}
+#about{
+    margin-top:110px;
+    width: 100%;
+    margin-left:20%;
+    background: white
+}
+.me{
+    padding-top:30px
+}
+.me h1{
+    font-size: 30px;
+    margin-left:-45px
+}
+.me p{
+    font-size:21px;
+    margin-left:-85px;
+    width:140%;
+    line-height:1.6em
+}
+.who{
+    margin-left:-20%;
+    width:120%;
+    background: #F9F9FF
+}
+.who h3{
+    font-size:30px;
+    padding-left:20px;
+}
+.who p{
+    font-size: 27px;
+    padding-left: 15px;
+    line-height: 1.4em
+}
+.background{
+    width:120%;
+    margin-top:75px;
+    margin-left:-20%;
+    background: #F9F9FF
+}
+.background h3{
+    font-size:30px;
+    padding-left:20px;
+}
+.background p{
+    font-size: 27px;
+    padding-left: 15px;
+    line-height: 1.4em
+}
+.des{
+    margin-top:90px;
+}
+.goals{
+    width:110%;
+    margin-top:75px;
+    margin-left:-10%;
+    background: #F9F9FF
+}
+.goals h3{
+    font-size:30px;
+    padding-left:20px;
+}
+.goals p{
+    font-size: 27px;
+    padding-left: 15px;
+    line-height: 1.4em
+}
+.goals pre{
+    font-size: 20px
+}
+.status{
+    width:110%;
+    margin-top:75px;
+    margin-left:-10%;
+    background: #F9F9FF
+}
+.status h3{
+    font-size:30px;
+    padding-left:20px;
+}
+.status p{
+    font-size: 27px;
+    padding-left: 15px;
+    line-height: 1.7em
+}
+.request{
+    margin-left:5%;
+}
+.request h3{
+    font-size:30px
+}
+.request input{
+    width:100px;
+    font-size: 14px;
+    margin-left:80%;
+    margin-top:-70px;
+}
+.table{
+    width:110%;
+    margin-left:10%
+}
+th{
+    font-size:27px;
+    width:47.5%;
+}
+td {
+    width:47.5%;
+    font-size:22px
+}
+.none{
+    display:none
+}
+#contact{
+    text-align: center;
+    margin-top:100px;
+    width:100%
+}
+#contact h1{  
+    font-size:38px;
+    margin-left:10%;
+    width:100%
+}
+#contact input, .call3 textarea{
+    font-size:16px;
+    margin: 25px 10px 25px 50px;
+}
+.info{
+    margin-left:-45%;
+    margin-top:700px
+}
+.locate h6{
+    margin-left:35%;
+}
+.locate p{
+    margin-left:35%
+}
+.phone h6{
+    margin-left:38%;
+}
+.gmail h6{
+    margin-left:55%;
+    margin-top:-45px
+}
+.gmail p{
+    margin-left:45%
+}
+footer {
+    width:100%;
+    margin-left:15%;
+    background: white;
+    color:#000410;
+    padding: 30px 0 30px;
+}

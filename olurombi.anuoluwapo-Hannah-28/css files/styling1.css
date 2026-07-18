@@ -1,0 +1,208 @@
+.navbar span{
+    padding-left: 3px;
+    padding-right: 3px
+}
+.navbar h1{
+    margin-top: 1;
+    margin-left: 1%;
+    font-size: 145%;
+}
+.navbar h3{
+    margin-left: 1%;
+    margin-top: -2vw;
+    font-size: 82%;
+}
+.navlist{
+    margin-top:-40px;
+}
+.navlist li{
+    padding :35px;
+    font-size: 105%;
+}
+.header{
+    margin-top:50px;
+    width: 100%;
+    margin-left:8%;
+    height:500px
+}
+.header a{
+    padding: 10px 10px;
+    margin: 20px;
+    font-size: 19px;
+}
+.header h1{
+    font-size: 230%;
+    margin-left:-5px
+}
+.mask{
+    padding-top: 23%
+}
+.header p{
+    font-size: 130%
+}
+.img img{
+    width:400px;
+    height:400px;
+    margin-left:15%
+}
+.story{
+    width:75%;
+    margin-left:20%;
+    margin-top:100px
+}
+.story h5{
+    font-size: 190%;
+}
+.story h2{
+    font-size:25px;
+}
+.story p{
+    font-family:sans-serif;
+    font-size:16px;
+    color:rgba(128, 128, 128, 0.945);
+}
+.story a{
+    padding: 0px 20px;
+    line-height: 50px;
+    font-size: 20px;
+    margin-top:15px
+}
+#about{
+    margin-top:130px;
+    width: 100%;
+    margin-left:10%;
+}
+.me{
+    padding-top:35px
+}
+.me h1{
+    font-size: 27px;
+    margin-left:-45px
+}
+.me p{
+    font-size:20px;
+    margin-left:-40px
+}
+.who{
+    width:90%;
+}
+.who h3{
+    font-size:30px;
+    padding-left:20px;
+}
+.who p{
+    font-size: 24px;
+    padding-left: 15px;
+    line-height: 1.8em
+}
+.background{
+    width:90%;
+    margin-top:75px;
+    margin-left:0%
+}
+.background h3{
+    font-size:30px;
+    padding-left:20px;
+}
+.background p{
+    font-size: 24px;
+    padding-left: 15px;
+    line-height: 1.8em
+}
+.des{
+    margin-top:90px
+}
+.goals{
+    width:82%;
+}
+.goals h3{
+    font-size:30px;
+    padding-left:20px;
+}
+.goals p{
+    font-size: 24px;
+    padding-left: 15px;
+    line-height: 1.8em
+}
+.goals pre{
+    font-size: 20px
+}
+.status{
+    width:82%;
+    margin-top:90px;
+    margin-left:10%
+}
+.status h3{
+    font-size:30px;
+    padding-left:20px;
+}
+.status p{
+    font-size: 24px;
+    padding-left: 15px;
+    line-height: 1.8em
+}
+.request{
+    margin-left:10%;
+}
+.request h3{
+    font-size:35px
+}
+.request input{
+    width:110px;
+    font-size: 15px;
+    margin-left:75%;
+    margin-top:-80px;
+}
+.table{
+    width:95%;
+    margin-left:10%
+}
+th{
+    font-size:27px;
+    width:47.5%;
+}
+td {
+    width:47.5%;
+    font-size:22px
+}
+.none{
+    display:none
+}
+#contact{
+    text-align: center;
+    margin-top:100px;
+    width:100%
+}
+#contact h1{  
+    font-size:38px;
+}
+#contact input, .call3 textarea{
+    font-size:16px;
+    margin: 25px 10px 25px 3px;
+}
+.info{
+    margin-left:-45%;
+    margin-top:700px
+}
+.locate h6{
+    margin-left:35%;
+}
+.locate p{
+    margin-left:35%
+}
+.phone h6{
+    margin-left:38%;
+}
+.gmail h6{
+    margin-left:55%;
+    margin-top:-45px
+}
+.gmail p{
+    margin-left:45%
+}
+footer {
+    background: white;
+    color:#000410;
+    padding: 30px 0 30px;
+}
+
